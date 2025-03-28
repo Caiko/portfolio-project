@@ -1,0 +1,27 @@
+@use "@/styles/abstracts/mixins" as clips;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+
+  & > * {
+    position: absolute;
+    inset: 0; // Gamechanger
+    grid-column: 1/2;
+  }
+}
+
+.header {
+  &__1 {
+    background-color: black;
+  }
+  &__2 {
+    background-color: red;
+  }
+  &__3 {
+    background-color: blue;
+    @include clips.triangle-left;
+  }
+}

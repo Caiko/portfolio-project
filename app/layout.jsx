@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>My Next.js App</title>
       </head>
-      <body className="bg-black">
+      <body>
         <Navbar />
         <main className="pt-24">{children}</main>
       </body>
