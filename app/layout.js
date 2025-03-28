@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-black">
         <Navbar />
-        <main>{children}</main>
+        <main className="pt-14">{children}</main>
       </body>
     </html>
   );
