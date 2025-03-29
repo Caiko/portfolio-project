@@ -3,8 +3,8 @@
   clip-path: polygon(100% 60%, 0 10%, 0 100%);
 }
 
-@mixin diagonal-top {
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+@mixin bottom-half-right {
+  clip-path: polygon(100% 60%, 0% 100%, 100% 100%);
 }
 
 @mixin angled-slice {

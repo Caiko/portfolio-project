@@ -6,16 +6,16 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.pages}>
         <Link href="/" className={styles.link}>
-          Home
+          .home
         </Link>
         <Link href="/about" className={styles.link}>
-          About Me
+          .about-me
         </Link>
         <Link href="/projects" className={styles.link}>
-          Projects
+          .projects
         </Link>
         <Link href="/contact" className={styles.link}>
-          Contact
+          .hobbies
         </Link>
       </div>
     </nav>

@@ -6,21 +6,23 @@
       [col-start] minmax(min-content, 1fr) [col-end]
     )
     [content-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: calc(100vh - 6rem) 40vw repeat(3, min-content);
-}
-
-.container {
-  &-1 {
-  }
-  &-2 {
-    background-color: lightblue;
-    grid-row: 2/3;
-    grid-column: content-start / content-end;
-  }
+  grid-template-rows: calc(200vh) 40vw repeat(3, min-content);
 }
 
 .header {
   grid-column: full-start / full-end;
   grid-row: 1/2;
-  background-color: pink;
+}
+
+.container {
+  &-1 {
+    background-color: black;
+    grid-row: 2/3;
+    grid-column: full-start / full-end;
+  }
+  &-2 {
+    background-color: pink;
+    grid-row: 3/4;
+    grid-column: content-start / content-end;
+  }
 }
