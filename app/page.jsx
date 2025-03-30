@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles["container"]}>
       <Header parentStyles={styles.header} />
-      <div></div>
+      <div className="hero"></div>
+
       <div className={styles["container-1"]}>There is some content here</div>
       <div className={styles["container-2"]}>There is some content here</div>
       {/* <div className="container-3">There is some content here</div>
