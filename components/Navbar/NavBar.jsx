@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import styles from "./NavBar.module.scss"; // or .module.scss
+import ScrambleButton from "../ScrambleButton/ScrambleButton";
 
 export default function Navbar() {
   return (
@@ -7,24 +9,24 @@ export default function Navbar() {
       <nav aria-label="Main Navigation" className={styles.nav}>
         <ul className={styles.pages}>
           <li>
-            <Link href="/" className={styles.link}>
-              .home
-            </Link>
+            <ScrambleButton content=".home" parentStyles={styles.link}>
+              <Link href="/">.home</Link>
+            </ScrambleButton>
           </li>
           <li>
-            <Link href="/about" className={styles.link}>
-              .about-me
-            </Link>
+            <ScrambleButton content=".about-me" parentStyles={styles.link}>
+              <Link href="/about" className={styles.link}></Link>
+            </ScrambleButton>
           </li>
           <li>
-            <Link href="/projects" className={styles.link}>
-              .projects
-            </Link>
+            <ScrambleButton content=".projects" parentStyles={styles.link}>
+              <Link href="/projects" className={styles.link}></Link>
+            </ScrambleButton>
           </li>
           <li>
-            <Link href="/contact" className={styles.link}>
-              .hobbies
-            </Link>
+            <ScrambleButton content=".hobbies" parentStyles={styles.link}>
+              <Link href="/contact" className={styles.link}></Link>
+            </ScrambleButton>
           </li>
         </ul>
       </nav>
