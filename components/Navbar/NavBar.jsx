@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import styles from "./NavBar.module.scss"; // or .module.scss
+import styles from "./NavBar.module.scss";
 import ScrambleButton from "../ScrambleButton/ScrambleButton";
 
 export default function Navbar() {
@@ -9,24 +8,32 @@ export default function Navbar() {
       <nav aria-label="Main Navigation" className={styles.nav}>
         <ul className={styles.pages}>
           <li>
-            <ScrambleButton content=".home" parentStyles={styles.link}>
-              <Link href="/">.home</Link>
-            </ScrambleButton>
+            <ScrambleButton
+              content=".home"
+              href="/"
+              parentStyles={styles.link}
+            />
           </li>
           <li>
-            <ScrambleButton content=".about-me" parentStyles={styles.link}>
-              <Link href="/about" className={styles.link}></Link>
-            </ScrambleButton>
+            <ScrambleButton
+              content=".about-me"
+              href="/about"
+              parentStyles={styles.link}
+            />
           </li>
           <li>
-            <ScrambleButton content=".projects" parentStyles={styles.link}>
-              <Link href="/projects" className={styles.link}></Link>
-            </ScrambleButton>
+            <ScrambleButton
+              content=".projects"
+              href="/projects"
+              parentStyles={styles.link}
+            />
           </li>
           <li>
-            <ScrambleButton content=".hobbies" parentStyles={styles.link}>
-              <Link href="/contact" className={styles.link}></Link>
-            </ScrambleButton>
+            <ScrambleButton
+              content=".hobbies"
+              href="/hobbies"
+              parentStyles={styles.link}
+            />
           </li>
         </ul>
       </nav>

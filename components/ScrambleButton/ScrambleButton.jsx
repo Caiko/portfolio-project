@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { useState } from "react";
 
-export default function ScrambleButton({ content, parentStyles }) {
+export default function ScrambleButton({ content, parentStyles, href }) {
   const [text, setText] = useState(content);
   const originalText = content;
   const randomChars = "#$%&*<>|~!?";
@@ -24,12 +25,14 @@ export default function ScrambleButton({ content, parentStyles }) {
   }
 
   return (
-    <button
-      className={parentStyles}
-      onMouseEnter={scrambleText}
-      onMouseLeave={() => setText(originalText)}
-    >
-      {text}
+    <button className={parentStyles}>
+      <Link
+        href={href}
+        onMouseEnter={scrambleText}
+        onMouseLeave={() => setText(originalText)}
+      >
+        {text}
+      </Link>
     </button>
   );
 }
