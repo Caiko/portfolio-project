@@ -6,15 +6,10 @@
       [col-start] minmax(min-content, 1fr) [col-end]
     )
     [content-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: calc(200vh) 40vw repeat(3, min-content);
-}
+  grid-template-rows:
+    [header-start] repeat(10, [header-row-start] 20vh [header-row-end])
+    [header-end] 40vw repeat(3, min-content);
 
-.header {
-  grid-column: full-start / full-end;
-  grid-row: 1/2;
-}
-
-.container {
   &-1 {
     background-color: black;
     grid-row: 2/3;
@@ -26,4 +21,15 @@
     grid-column: content-start / content-end;
     height: 300px;
   }
+}
+
+.header {
+  grid-column: full-start / full-end;
+  grid-row: header-start / header-end;
+}
+
+.hero-container {
+  grid-row: header-row-start 3 / header-row-end 9; // Trying here
+  grid-column: content-start / content-end;
+  z-index: 1;
 }
