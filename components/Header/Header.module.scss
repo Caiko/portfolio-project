@@ -1,10 +1,14 @@
 @use "@/styles/abstracts/mixins" as clips;
 
 .container {
+  grid-column: full-start / full-end;
+  grid-row: header-start / header-end;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   position: relative;
+  overflow-x: hidden;
 
   & > * {
     position: absolute;
@@ -15,20 +19,29 @@
 
 .header {
   &__1 {
-    overflow-x: hidden;
     height: 125vh;
+    inset: -1rem -1rem 0 -1rem;
     &-inner {
       filter: blur(5px);
-      inset: -1rem -1rem 0 -1rem;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
     }
   }
+
   &__2 {
-    @include clips.bottom-half-right;
-    background-color: black;
-  }
-  &__3 {
     background-color: crimson;
     @include clips.triangle-left;
+    z-index: 2;
+  }
+
+  &__3 {
+    @include clips.bottom-half-right;
+    background-color: #1a1a1a;
+    z-index: 3;
   }
 }
 

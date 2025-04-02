@@ -7,13 +7,14 @@
     )
     [content-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows:
-    [header-start] repeat(10, [header-row-start] 20vh [header-row-end])
-    [header-end] 40vw repeat(3, min-content);
+    [header-start] repeat(20, [header-row-start] 10vh [header-row-end])
+    [header-end pannel-1-start] 40vw [pannel-1-end] repeat(3, min-content);
 
   &-1 {
-    background-color: black;
-    grid-row: 2/3;
+    background-color: #1a1a1a;
+    grid-row: pannel-1-start/pannel-1-end;
     grid-column: full-start / full-end;
+    z-index: 5;
   }
   &-2 {
     background-color: pink;
@@ -23,13 +24,13 @@
   }
 }
 
-.header {
-  grid-column: full-start / full-end;
-  grid-row: header-start / header-end;
-}
+// .header {
+//   grid-column: full-start / full-end;
+//   grid-row: header-start / header-end;
+// }
 
-.hero-container {
-  grid-row: header-row-start 3 / header-row-end 9; // Trying here
-  grid-column: content-start / content-end;
-  z-index: 1;
-}
+// .hero-container {
+//   grid-row: header-row-start 3 / header-row-end 9; // Trying here
+//   grid-column: content-start / content-end;
+//   z-index: 1;
+// }

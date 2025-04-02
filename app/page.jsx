@@ -1,15 +1,17 @@
 import Hero from "@/components/Hero/Hero";
 import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
+import data from "@/content/data.json";
 
 export default function Home() {
   return (
     <div className={styles["container"]}>
       <Header parentStyles={styles.header} />
       <Hero
-        title={"Eyoooo"}
+        title={data.hero.title}
         partentStyles={styles["hero-container"]}
-        textArea={"Babyyyyyyyyyyyyyyyyyyyyyyyy"}
+        textArea={data.hero.textArea}
+        subTitle={data.hero.subTitle}
       ></Hero>
       <div className={styles["container-1"]}>There is some content here</div>
       <div className={styles["container-2"]}>There is some content here</div>

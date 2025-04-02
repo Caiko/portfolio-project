@@ -25,14 +25,14 @@ export default function ScrambleButton({ content, parentStyles, href }) {
   }
 
   return (
-    <button className={parentStyles}>
-      <Link
-        href={href}
-        onMouseEnter={scrambleText}
-        onMouseLeave={() => setText(originalText)}
-      >
-        {text}
-      </Link>
-    </button>
+    <Link
+      className={parentStyles}
+      onMouseEnter={scrambleText}
+      onMouseLeave={() => setText(originalText)}
+      href={href}
+      passHref
+    >
+      {text}
+    </Link>
   );
 }

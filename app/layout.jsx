@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar/NavBar";
 import "@/styles/globals.scss";
-import { AppProvider } from "@/context/AppContext";
 
 export const metadata = {
   title: "Marin Nikolov",
@@ -14,10 +13,8 @@ export default function RootLayout({ children }) {
         <title>My Next.js App</title>
       </head>
       <body>
-        <AppProvider>
-          <Navbar />
-          <main>{children}</main>
-        </AppProvider>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );

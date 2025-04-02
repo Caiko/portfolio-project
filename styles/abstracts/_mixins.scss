@@ -1,10 +1,10 @@
 ////////////////////////////////////// Clips //////////////////////////////////////////////
 @mixin triangle-left {
-  clip-path: polygon(100% 60%, 0 10%, 0 100%);
+  clip-path: polygon(100% 50%, 0 5%, 0 100%);
 }
 
 @mixin bottom-half-right {
-  clip-path: polygon(100% 60%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 50%, 100% 100%, 0 100%, 0 95%);
 }
 
 @mixin angled-slice {
