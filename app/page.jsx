@@ -13,8 +13,8 @@ export default function Home() {
         textArea={data.hero.textArea}
         subTitle={data.hero.subTitle}
       ></Hero>
-      <div className={styles["container-1"]}>There is some content here</div>
-      <div className={styles["container-2"]}>There is some content here</div>
+      <div className={styles["container-1"]}></div>
+      <div className={styles["container-2"]}></div>
 
       {/* <div className="container-3">There is some content here</div>
       <div className="container-4">There is some content here</div>

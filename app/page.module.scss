@@ -7,7 +7,7 @@
     )
     [content-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows:
-    [header-start] repeat(20, [header-row-start] 10vh [header-row-end])
+    [header-start] repeat(20, [header-row-start] 8vh [header-row-end])
     [header-end pannel-1-start] 40vw [pannel-1-end] repeat(3, min-content);
 
   &-1 {
@@ -23,14 +23,3 @@
     height: 300px;
   }
 }
-
-// .header {
-//   grid-column: full-start / full-end;
-//   grid-row: header-start / header-end;
-// }
-
-// .hero-container {
-//   grid-row: header-row-start 3 / header-row-end 9; // Trying here
-//   grid-column: content-start / content-end;
-//   z-index: 1;
-// }

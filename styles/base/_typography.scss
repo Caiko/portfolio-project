@@ -19,3 +19,20 @@
   font-size: 1.4rem;
   line-height: 1.5;
 }
+
+.btn {
+  background-color: $color-dark-grey-1;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-dark-grey-3;
+  }
+  margin: 2rem;
+}

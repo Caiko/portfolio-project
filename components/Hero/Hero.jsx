@@ -20,6 +20,7 @@ export default function Hero({ title, textArea, subTitle }) {
             </h1>
             <h2 className="h2">{subTitle}</h2>
             <p className="p">{textArea}</p>
+            <button className="btn">Contant/Cv</button>
           </header>
         </section>
       </div>

@@ -7,11 +7,14 @@
   z-index: 2;
 
   &__hero-text-container {
-    padding: 1rem;
-    grid-row: header-row-start 5 / header-row-end 20;
+    padding: 1rem; // keep an eye out for this
+    grid-row: header-row-start 4 / header-row-end 20;
     grid-column: content-start / col-end 4;
 
     &__section {
+      padding: 2rem;
+    }
+    &__btn {
       padding: 2rem;
     }
   }
