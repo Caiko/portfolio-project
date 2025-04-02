@@ -3,12 +3,12 @@
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: content-start / full-end;
-  grid-row: header-row-start 1 / header-row-end 9;
+  grid-row: header-row-start 2 / header-row-end 20;
   z-index: 2;
 
   &__hero-text-container {
     padding: 1rem;
-    grid-row: header-row-start 3 / header-row-end 7;
+    grid-row: header-row-start 5 / header-row-end 20;
     grid-column: content-start / col-end 4;
 
     &__section {
@@ -17,7 +17,7 @@
   }
 
   &__hero-image-container {
-    grid-row: header-row-start 2 / header-row-end 8;
+    grid-row: header-row-start 1 / header-row-end 20;
     grid-column: col-start 5 / full-end;
     padding: 2rem;
 

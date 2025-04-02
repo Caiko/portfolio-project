@@ -5,21 +5,26 @@
   grid-row: header-start / header-end;
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: 1fr;
   position: relative;
   overflow-x: hidden;
 
   & > * {
     position: absolute;
     inset: 0; // Gamechanger
-    grid-column: 1/2;
+    // grid-column: 1/2;
+    grid-column: full-start / full-end;
+    grid-row: header-start / header-end;
   }
 }
 
 .header {
   &__1 {
-    height: 125vh;
+    // height: 125vh;
+    grid-row: header-row-start 1 / header-row-end 10; // This line here
     inset: -1rem -1rem 0 -1rem;
     &-inner {
       filter: blur(5px);

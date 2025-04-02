@@ -1,13 +1,21 @@
+@use "../abstracts/variables" as *;
+
 .h1 {
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   font-weight: bold;
-  line-height: 1.2;
-  color: white;
+  color: $color-light-grey-1;
+  padding: 2rem;
 }
 
 .h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: 1.2;
-  color: lightblue;
+  color: $color-light-grey-2;
+  padding: 2rem;
+}
+.p {
+  padding: 2rem;
+  color: $color-light-grey-3;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
