@@ -6,10 +6,9 @@ import data from "@/content/data.json";
 export default function Home() {
   return (
     <div className={styles["container"]}>
-      <Header parentStyles={styles.header} />
+      <Header />
       <Hero
         title={data.hero.title}
-        partentStyles={styles["hero-container"]}
         textArea={data.hero.textArea}
         subTitle={data.hero.subTitle}
       ></Hero>
