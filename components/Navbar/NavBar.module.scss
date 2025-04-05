@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   z-index: 50;
-  background-color: #34495e;
   padding: 1rem;
   background-color: transparent;
   padding: 1rem;
@@ -12,6 +11,12 @@
 
   display: flex;
   justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 .pages {
