@@ -13,7 +13,6 @@
   & > * {
     position: absolute;
     inset: 0; // Gamechanger
-    // grid-column: 1/2;
     grid-column: full-start / full-end;
     grid-row: header-start / header-end;
   }
@@ -21,7 +20,6 @@
 
 .header {
   &__1 {
-    // height: 125vh;
     grid-row: header-row-start 1 / header-row-end 10; // This line here
     inset: -1rem -1rem 0 -1rem;
     &-inner {
@@ -47,17 +45,3 @@
     z-index: 3;
   }
 }
-
-// &__1 {
-//   overflow-x: hidden;
-//   &-inner {
-//     position: absolute;
-//     background-image: url("../../assets/city.jpg");
-
-//     background-size: cover;
-//     background-position: center;
-//     filter: blur(5px);
-//     inset: -1rem -1rem 0 -1rem;
-//     height: 125vh;
-//   }
-// }
