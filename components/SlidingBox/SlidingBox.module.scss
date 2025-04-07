@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  grid-column: content-start / col-end 4;
+  grid-row: pannel-1-start / pannel-1-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.slidingBox {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+    position: sticky;
+    top: 50%;
+
+    height: fit-content;
+    padding-bottom: 4rem;
+  }
+}

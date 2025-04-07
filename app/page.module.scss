@@ -8,18 +8,32 @@
     [content-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows:
     [header-start] repeat(20, [header-row-start] 8vh [header-row-end])
-    [header-end pannel-1-start] 40vw [pannel-1-end] repeat(3, min-content);
+    [header-end pannel-1-start] 140vw [pannel-1-end] repeat(3, min-content);
 
   &-1 {
     background-color: #1a1a1a;
     grid-row: pannel-1-start/pannel-1-end;
     grid-column: full-start / full-end;
     z-index: 5;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+    &-slidebox {
+      grid-column: content-start / col-end 4;
+      grid-row: pannel-1-start/pannel-1-end;
+    }
+
+    &-content {
+      grid-column: col-start 5 / content-end;
+      grid-row: pannel-1-start/pannel-1-end;
+      color: white;
+    }
   }
   &-2 {
-    background-color: pink;
-    grid-row: 3/4;
-    grid-column: content-start / content-end;
-    height: 300px;
+    grid-column: full-start / full-end;
+    height: 150vh;
+    background-color: brown;
   }
 }
