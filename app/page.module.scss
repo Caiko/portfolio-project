@@ -20,11 +20,6 @@
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
 
-    &-slidebox {
-      grid-column: content-start / col-end 4;
-      grid-row: pannel-1-start/pannel-1-end;
-    }
-
     &-content {
       grid-column: col-start 5 / content-end;
       grid-row: pannel-1-start/pannel-1-end;

@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
   transition: background-color 0.3s ease;
+
+  &__open-bg {
+    background-color: #1a1a1a;
+  }
 }
 
 .scrolled {
@@ -25,6 +29,29 @@
   gap: 1rem;
   align-content: center;
   justify-items: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    padding: 2rem;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
 
 .link {
@@ -46,5 +73,20 @@
   &:active {
     transform: translateY(1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

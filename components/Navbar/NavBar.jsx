@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,16 +21,30 @@ export default function Navbar() {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setIsMobile(!isMobile);
+    console.log("Menu toggled");
+    console.log(isMobile);
+  };
 
   return (
     <header>
       <nav
         aria-label="Main Navigation"
-        className={`${styles.nav} ${isScrolled ? styles.scrolled : ""} `}
+        className={`${styles.nav} ${isScrolled ? styles.scrolled : ""} ${
+          isMobile ? styles["nav__open-bg"] : ""
+        } `}
       >
-        <ul className={styles.pages}>
+        <div className={styles["menu-icon"]} onClick={toggleMenu}>
+          <svg className={styles["menu-icon__icon"]}>
+            <use href="/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </div>
+        <ul className={`${styles.pages} ${isMobile ? styles["open"] : ""}`}>
           <li>
             <ScrambleButton
               content=".home"
