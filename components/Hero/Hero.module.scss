@@ -24,7 +24,8 @@
     grid-column: col-start 5 / full-end;
     padding: 2rem;
 
-    // &__image {
-    // }
+    &__image {
+      object-fit: cover;
+    }
   }
 }

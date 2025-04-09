@@ -1,3 +1,4 @@
+import Icons from "../Icons/Icons";
 import styles from "./SlidingBox.module.scss";
 export default function SlidingBox() {
   return (
@@ -10,6 +11,8 @@ export default function SlidingBox() {
             <p>
               My expertise spans over software development, data analysis, and
             </p>
+            <Icons></Icons>
+
             {/* Navigation Links
             <nav className="mt-7 flex flex-col space-y-4 text-gray-400 text-sm">
               <a
