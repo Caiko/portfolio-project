@@ -1,3 +1,4 @@
+// https://tabler.io/icons use this for the icons next tinme
 import styles from "./Icons.module.scss";
 
 export default function Icons() {
