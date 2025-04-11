@@ -4,7 +4,7 @@ import Header from "@/components/HomePage/Header/Header";
 import data from "@/content/data.json";
 import SlidingBox from "@/components/HomePage/Pannel1/SlidingBox/SlidingBox";
 import TimeLine from "@/components/HomePage/Pannel1/TimeLine/TimeLine";
-import Event from "@/components/HomePage/Pannel1/EventLine/Event/Event";
+import EventLine from "@/components/HomePage/Pannel1/EventLine/EventLine";
 
 export default function Home() {
   return (
@@ -21,10 +21,10 @@ export default function Home() {
       <div className={styles["about-me__timeline"]}>
         <TimeLine />
       </div>
-      <div className={styles["about-me__events"]}></div>
-      <div className={styles["container-2"]}>
-        <Event></Event>
+      <div className={styles["about-me__events"]}>
+        <EventLine />
       </div>
+      <div className={styles["container-2"]}></div>
 
       {/* <div className="container-3">There is some content here</div>
       <div className="container-4">There is some content here</div>

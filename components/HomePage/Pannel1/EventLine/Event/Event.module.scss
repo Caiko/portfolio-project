@@ -1,0 +1,15 @@
+.card {
+  & > * {
+    color: white;
+  }
+}
+.imageWrapper {
+  position: relative;
+  height: 8rem;
+  width: 28rem;
+}
+
+.image {
+  object-fit: fill;
+  border-radius: 0.5rem;
+}
