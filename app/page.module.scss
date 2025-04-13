@@ -28,7 +28,10 @@
 
   & .about-me__events {
     grid-column: col-start 5 / full-end;
-    grid-row: header-row-start 16 / pannel-1-end;
+    grid-row: header-row-start 15 / pannel-1-end;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
     z-index: 3;
   }
   &-2 {

@@ -31,4 +31,8 @@ export default function Home() {
       <div className="container-5">There is some content here</div> */}
     </div>
   );
+
+  // <div className={styles["about-me__events"]}>
+  //       <EventLine />
+  //     </div>
 }

@@ -1,4 +1,25 @@
 .container {
-  grid-column: col-start 6 / col-end 6;
-  grid-row: header-row-start 16 / pannel-1-end;
+  grid-row: header-row-start / pannel-1-end;
+  grid-column: col-start 1 / content-end;
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: 8rem;
+
+  justify-items: center;
+  align-content: start;
+
+  &__about-me-title {
+    grid-column: col-start 1 / content-end;
+    color: white;
+    font-size: 6rem;
+    justify-self: end;
+  }
+
+  &__events {
+    grid-column: col-start 1 / content-end;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    padding-bottom: 3rem;
+  }
 }
