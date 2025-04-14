@@ -18,9 +18,7 @@ export default function Home() {
       <div className={styles["about-me__slidebox"]}>
         <SlidingBox />
       </div>
-      <div className={styles["about-me__timeline"]}>
-        <TimeLine />
-      </div>
+      <div className={styles["about-me__timeline"]}></div>
       <div className={styles["about-me__events"]}>
         <EventLine />
       </div>

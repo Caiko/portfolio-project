@@ -1,11 +1,12 @@
 .container {
   grid-column: col-start 1 / col-end 1;
+  grid-row: events-start / events-end;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20rem;
-  padding: 3rem 0;
+  gap: 21rem;
+  padding-top: 4rem;
 }
 
 .step {
@@ -15,10 +16,10 @@
 }
 
 .dot {
-  width: 3rem; // ~ w-3
+  width: 3rem;
   height: 3rem;
   border-radius: 9999px;
-  border: 0.5rem solid white; // Tailwind's gray-700
+  border: 0.5rem solid white;
   background-color: crimson;
 }
 
@@ -26,8 +27,8 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 0.5rem; // ~ w-6
-  height: 20rem;
-  background-color: white; // Tailwind's gray-500
+  width: 0.5rem;
+  height: 21.2rem;
+  background-color: white;
   transform: translateX(-50%);
 }
