@@ -7,10 +7,11 @@ export default function Event({ imageSrc, heading, description, period }) {
       <div className={styles.imageWrapper}>
         <Image src={imageSrc} alt={heading} className={styles.image} fill />
       </div>
-
-      <h3 className={styles.heading}>{heading}</h3>
-      <h4 className={styles.period}>period</h4>
-      <p className={styles.description}>{description}</p>
+      <div className={styles["container__text"]}>
+        <h3 className={styles.heading}>{heading}</h3>
+        <h4 className={styles.period}>{period}</h4>
+        <p className={styles.description}>{description}</p>
+      </div>
     </div>
   );
 }

@@ -4,25 +4,32 @@
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows:
-    [header-start] 8rem [header-end] 4rem [events-start] min-content
-    [events-end]
-    4rem;
+    [header-start] 8rem [header-end] 8rem [events-start] min-content
+    [events-end];
 
   justify-items: center;
   align-content: start;
+  padding-bottom: 4rem;
 
   &__about-me-title {
     grid-column: col-start 1 / content-end;
     color: white;
     font-size: 6rem;
     justify-self: end;
+    padding-top: 1rem;
   }
 
   &__events {
     grid-column: col-start 2 / content-end;
     grid-row: events-start / events-end;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
     gap: 10rem;
+    height: 100%;
+
+    // Use this in case the autofit is not scaling/responsive
+    // display: flex;
+    // flex-direction: column;
+    // gap: 10rem;
   }
 }

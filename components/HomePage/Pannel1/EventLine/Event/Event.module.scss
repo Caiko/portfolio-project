@@ -4,9 +4,11 @@
   justify-items: center;
   align-content: center;
   gap: 0.5rem;
-
-  & > * {
-    color: white;
+  &__text {
+    text-align: center;
+    & > * {
+      color: white;
+    }
   }
 }
 .imageWrapper {

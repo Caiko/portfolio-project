@@ -10,3 +10,7 @@
 @mixin angled-slice {
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
+
+@mixin top-left-corner {
+  clip-path: polygon(0 0, 0 50%, 100% 0);
+}

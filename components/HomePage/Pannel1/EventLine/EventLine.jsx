@@ -17,7 +17,7 @@ export default function EventLine() {
         <Event
           imageSrc="/eventLogos/easv.webp"
           heading="Event 1"
-          description="Description of Event 1sssssssssssssssssssssssssss sssssssssssssssssss sssssssssss ssssssssssssss sssssssssss sssssssssss sssssssssss sssssssssssssssssssss ssssssssssssssss"
+          description="Description of Event sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd sadasdasd 1sssssssssssssssssssssssssss sssssssssssssssssss sssssssssss ssssssssssssss sssssssssss sssssssssss sssssssssss sssssssssssssssssssss ssssssssssssssss"
           period="2023-01-01 to 2023-01-02"
         />
         <Event
