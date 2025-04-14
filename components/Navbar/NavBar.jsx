@@ -49,28 +49,36 @@ export default function Navbar() {
             <ScrambleButton
               content=".home"
               href="/"
-              parentStyles={styles.link}
+              parentStyles={`${styles.link} ${
+                isScrolled && styles["link__scrolled"]
+              }`}
             />
           </li>
           <li>
             <ScrambleButton
               content=".about-me"
               href="/about"
-              parentStyles={styles.link}
+              parentStyles={`${styles.link} ${
+                isScrolled && styles["link__scrolled"]
+              }`}
             />
           </li>
           <li>
             <ScrambleButton
               content=".projects"
               href="/projects"
-              parentStyles={styles.link}
+              parentStyles={`${styles.link} ${
+                isScrolled && styles["link__scrolled"]
+              }`}
             />
           </li>
           <li>
             <ScrambleButton
               content=".hobbies"
               href="/hobbies"
-              parentStyles={styles.link}
+              parentStyles={`${styles.link} ${
+                isScrolled && styles["link__scrolled"]
+              }`}
             />
           </li>
         </ul>

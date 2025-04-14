@@ -61,7 +61,7 @@
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease, box-shadow 0.2s ease;
   width: 13rem;
   text-align: center;
   display: block;
@@ -73,6 +73,10 @@
   &:active {
     transform: translateY(1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &__scrolled:hover {
+    background-color: crimson;
   }
 }
 
