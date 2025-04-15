@@ -38,4 +38,13 @@
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
   }
+
+  &__hobbies {
+    grid-row: pannel-start 3 / pannel-end 3;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    height: 150rem;
+  }
 }
