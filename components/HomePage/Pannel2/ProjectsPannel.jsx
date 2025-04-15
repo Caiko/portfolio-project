@@ -24,6 +24,7 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/foodiesBanner.png"}
+          stack={[iconMap["React"], iconMap["Nest"], iconMap["Sass"]]}
         />
         <ProjectCard
           title={"Georgi"}

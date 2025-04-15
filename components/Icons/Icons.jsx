@@ -72,7 +72,7 @@ export function NestIcon() {
 export function SassIcon() {
   return (
     <a target="_blank" rel="noopener noreferrer">
-      <svg className={`${styles.icon} `}>
+      <svg className={`${styles.icon}`}>
         <use href="/icons/sprite.svg#icon-sass"></use>
       </svg>
     </a>
@@ -80,11 +80,9 @@ export function SassIcon() {
 }
 export function TailwindIcon() {
   return (
-    <a target="_blank" rel="noopener noreferrer">
-      <svg className={`${styles.icon} `}>
-        <use href="/icons/sprite.svg#icon-tailwindcss"></use>
-      </svg>
-    </a>
+    <svg className={`${styles.icon}`}>
+      <use href="/icons/sprite.svg#icon-tailwindcss"></use>
+    </svg>
   );
 }
 export function ReactIcon() {
