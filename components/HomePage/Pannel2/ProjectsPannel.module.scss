@@ -13,6 +13,7 @@
     [header-start] 20rem
     [header-end content-start] auto
     [content-end];
+  padding-bottom: 4rem;
 
   &::before {
     content: "";
@@ -35,7 +36,7 @@
     gap: 4vw;
   }
   &__heading {
-    grid-column: full-start / content-end;
+    grid-column: full-start / full-end;
     grid-row: header-start / header-end;
     display: grid;
     grid-template-columns: subgrid;
@@ -44,7 +45,7 @@
     position: relative;
 
     &__title {
-      grid-column: full-start / content-end;
+      grid-column: full-start / full-end;
       color: white;
       font-size: 6rem;
       justify-self: start;
