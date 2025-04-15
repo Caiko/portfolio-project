@@ -31,6 +31,16 @@ export default function ProjectsPannel() {
           description={"Atanasov"}
           image={"/projectCards/foodiesBanner.png"}
         />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/foodiesBanner.png"}
+        />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/foodiesBanner.png"}
+        />
       </div>
     </div>
   );

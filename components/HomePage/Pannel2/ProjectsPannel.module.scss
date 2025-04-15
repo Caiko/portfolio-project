@@ -13,7 +13,6 @@
     [header-start] 20rem
     [header-end content-start] auto
     [content-end];
-  padding: 8rem;
 
   &::before {
     content: "";
@@ -28,12 +27,12 @@
   }
 
   &__projects {
-    grid-column: full-start / full-end;
+    grid-column: content-start / content-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-    align-content: start;
-    justify-items: center;
-    gap: 8rem 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
+    align-content: center;
+    justify-content: center;
+    gap: 4vw;
   }
   &__heading {
     grid-column: full-start / content-end;
