@@ -1,7 +1,8 @@
+@use "@/styles/abstracts/variables" as *;
 .container {
   position: relative;
   grid-column: content-start / col-end 3;
-  grid-row: pannel-1-start / pannel-1-end;
+  grid-row: pannel-start 1 / pannel-end 1;
   display: flex;
   flex-direction: column;
   align-items: center;

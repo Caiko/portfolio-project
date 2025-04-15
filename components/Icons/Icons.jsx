@@ -39,3 +39,18 @@ export default function Icons() {
     </div>
   );
 }
+
+// //////// For later use /////////////
+// export function gitHubIcon() {
+//   return (
+//     <a
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       href="https://github.com/Caiko"
+//     >
+//       <svg className={styles.icon}>
+//         <use href="/icons/sprite.svg#icon-github"></use>
+//       </svg>
+//     </a>
+//   );
+// }

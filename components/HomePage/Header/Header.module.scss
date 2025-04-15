@@ -1,4 +1,5 @@
 @use "@/styles/abstracts/mixins" as clips;
+@use "@/styles/abstracts/variables" as *;
 
 .container {
   grid-column: full-start / full-end;
@@ -20,7 +21,7 @@
 
 .header {
   &__1 {
-    grid-row: header-row-start 1 / header-row-end 10; // This line here
+    grid-row: header-row-start 1 / header-row-end 10;
     inset: -1rem -1rem 0 -1rem;
     &-inner {
       filter: blur(5px);
@@ -34,14 +35,14 @@
   }
 
   &__2 {
-    background-color: crimson;
+    background-color: $color-primary;
     @include clips.triangle-left;
     z-index: 2;
   }
 
   &__3 {
     @include clips.bottom-half-right;
-    background-color: #1a1a1a;
+    background-color: $color-dark-grey-1;
     z-index: 3;
   }
 }
