@@ -1,5 +1,6 @@
 import ProjectCard from "./IndividualProject/ProjectCard";
 import styles from "./ProjectsPannel.module.scss";
+import { iconMap } from "@/components/Icons/Icons";
 
 export default function ProjectsPannel() {
   return (
@@ -12,6 +13,12 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/foodiesBanner.png"}
+          stack={[
+            iconMap["React"],
+            iconMap["Next"],
+            iconMap["Sass"],
+            iconMap["Tailwind"],
+          ]}
         />
         <ProjectCard
           title={"Georgi"}

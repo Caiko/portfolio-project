@@ -41,12 +41,64 @@ export default function Icons() {
 }
 
 //////// For later use /////////////
-export function GitHubIcon({ href, twcss }) {
+export function GitHubIcon({ href }) {
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
-      <svg className={`${styles.icon} ${twcss}`}>
+      <svg className={`${styles.icon} `}>
         <use href="/icons/sprite.svg#icon-github"></use>
       </svg>
     </a>
   );
 }
+
+export function NextIcon() {
+  return (
+    <a target="_blank" rel="noopener noreferrer">
+      <svg className={`${styles.icon} `}>
+        <use href="/icons/sprite.svg#icon-next-dot-js"></use>
+      </svg>
+    </a>
+  );
+}
+export function NestIcon() {
+  return (
+    <a target="_blank" rel="noopener noreferrer">
+      <svg className={`${styles.icon} `}>
+        <use href="/icons/sprite.svg#icon-Nestjs"></use>
+      </svg>
+    </a>
+  );
+}
+export function SassIcon() {
+  return (
+    <a target="_blank" rel="noopener noreferrer">
+      <svg className={`${styles.icon} `}>
+        <use href="/icons/sprite.svg#icon-sass"></use>
+      </svg>
+    </a>
+  );
+}
+export function TailwindIcon() {
+  return (
+    <a target="_blank" rel="noopener noreferrer">
+      <svg className={`${styles.icon} `}>
+        <use href="/icons/sprite.svg#icon-tailwindcss"></use>
+      </svg>
+    </a>
+  );
+}
+export function ReactIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-react"></use>
+    </svg>
+  );
+}
+
+export const iconMap = {
+  React: ReactIcon,
+  Next: NextIcon,
+  Nest: NestIcon,
+  Sass: SassIcon,
+  Tailwind: TailwindIcon,
+};
