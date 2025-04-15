@@ -9,8 +9,10 @@
   height: 100%;
   display: grid;
   grid-template-columns: subgrid;
-  grid-template-rows: [header-start] 20rem [header-end content-start] min-content [content-end];
-
+  grid-template-rows:
+    [header-start] 20rem
+    [header-end content-start] auto
+    [content-end];
   padding: 8rem;
 
   &::before {
@@ -26,9 +28,12 @@
   }
 
   &__projects {
-    grid-column: content-start / content-end;
-    grid-row: col-start/ content-end;
-    height: 120vh;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    align-content: start;
+    justify-items: center;
+    gap: 8rem 8rem;
   }
   &__heading {
     grid-column: full-start / content-end;

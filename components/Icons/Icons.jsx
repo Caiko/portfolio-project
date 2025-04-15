@@ -40,17 +40,13 @@ export default function Icons() {
   );
 }
 
-// //////// For later use /////////////
-// export function gitHubIcon() {
-//   return (
-//     <a
-//       target="_blank"
-//       rel="noopener noreferrer"
-//       href="https://github.com/Caiko"
-//     >
-//       <svg className={styles.icon}>
-//         <use href="/icons/sprite.svg#icon-github"></use>
-//       </svg>
-//     </a>
-//   );
-// }
+//////// For later use /////////////
+export function GitHubIcon({ href, twcss }) {
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={href}>
+      <svg className={`${styles.icon} ${twcss}`}>
+        <use href="/icons/sprite.svg#icon-github"></use>
+      </svg>
+    </a>
+  );
+}
