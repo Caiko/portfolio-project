@@ -1,0 +1,28 @@
+{
+  "foodies": {
+    "title": "Project One",
+    "description": "This is the first project.",
+    "href": "https://example.com/project1"
+  },
+
+  "project2": {
+    "title": "Project One",
+    "description": "This is the first project.",
+    "href": "https://example.com/project1"
+  },
+  "project3": {
+    "title": "Project One",
+    "description": "This is the first project.",
+    "href": "https://example.com/project1"
+  },
+  "project4": {
+    "title": "Project One",
+    "description": "This is the first project.",
+    "href": "https://example.com/project1"
+  },
+  "project5": {
+    "title": "Project One",
+    "description": "This is the first project.",
+    "href": "https://example.com/project1"
+  }
+}

@@ -20,9 +20,17 @@ export default function ProjectCard({ image, title, description }) {
 
         {/* Back side*/}
         <div className={styles["container__card-back"]}>
-          <h3>{title}</h3>
-          <p>{description}</p>
-          <GitHubIcon />
+          <div className={styles["container__card-back__stack"]}>
+            <h4>Stack:</h4>
+          </div>
+          <div className={styles["container__card-back__text"]}>
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+          <div className={styles["container__card-back__icon"]}>
+            <h4>Visit:</h4>
+            <GitHubIcon />
+          </div>
         </div>
       </div>
     </div>
