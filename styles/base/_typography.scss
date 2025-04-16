@@ -1,22 +1,19 @@
 @use "../abstracts/variables" as *;
 
 .h1 {
-  font-size: 5.5rem;
+  font-size: 55px;
   font-weight: bold;
   color: $color-light-grey-1;
-  padding: 2rem;
 }
 
 .h2 {
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: bold;
   color: $color-light-grey-2;
-  padding: 2rem;
 }
 .p {
-  padding: 2rem;
   color: $color-light-grey-3;
-  font-size: 1.4rem;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -34,5 +31,4 @@
   &:hover {
     background-color: $color-dark-grey-3;
   }
-  margin: 2rem;
 }

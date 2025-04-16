@@ -30,10 +30,11 @@
   &__projects {
     grid-column: content-start / content-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     align-content: center;
     justify-content: center;
-    gap: 4vw;
+    gap: clamp(4rem, 6vw, 12rem);
+    justify-items: center;
   }
   &__heading {
     grid-column: full-start / full-end;
