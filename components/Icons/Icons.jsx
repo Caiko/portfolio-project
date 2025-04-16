@@ -53,29 +53,23 @@ export function GitHubIcon({ href }) {
 
 export function NextIcon() {
   return (
-    <a target="_blank" rel="noopener noreferrer">
-      <svg className={`${styles.icon} `}>
-        <use href="/icons/sprite.svg#icon-next-dot-js"></use>
-      </svg>
-    </a>
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-next-dot-js"></use>
+    </svg>
   );
 }
 export function NestIcon() {
   return (
-    <a target="_blank" rel="noopener noreferrer">
-      <svg className={`${styles.icon} `}>
-        <use href="/icons/sprite.svg#icon-Nestjs"></use>
-      </svg>
-    </a>
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-Nestjs"></use>
+    </svg>
   );
 }
 export function SassIcon() {
   return (
-    <a target="_blank" rel="noopener noreferrer">
-      <svg className={`${styles.icon}`}>
-        <use href="/icons/sprite.svg#icon-sass"></use>
-      </svg>
-    </a>
+    <svg className={`${styles.icon}`}>
+      <use href="/icons/sprite.svg#icon-sass"></use>
+    </svg>
   );
 }
 export function TailwindIcon() {
@@ -89,6 +83,14 @@ export function ReactIcon() {
   return (
     <svg className={`${styles.icon} `}>
       <use href="/icons/sprite.svg#icon-react"></use>
+    </svg>
+  );
+}
+
+export function MenuIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-menu"></use>
     </svg>
   );
 }

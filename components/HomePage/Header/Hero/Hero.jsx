@@ -30,6 +30,7 @@ export default function Hero({ title, textArea, subTitle }) {
           alt="Image of Marin Nikolov"
           priority={true} // Preloads the image for better performance
           className={styles["hero-container__hero-image-container__image"]}
+          fill
         />
       </div>
     </div>

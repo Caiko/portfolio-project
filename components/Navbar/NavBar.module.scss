@@ -84,14 +84,17 @@
 .menu-icon {
   display: none;
   cursor: pointer;
+  color: white;
 
-  &__icon {
-    width: 4rem;
-    height: 4rem;
-    fill: white;
-  }
+  // &__icon {
+  //   width: 5rem;
+  //   height: 8rem;
+  // }
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
   }
 }

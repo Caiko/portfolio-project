@@ -1,6 +1,7 @@
 "use client";
 import styles from "./NavBar.module.scss";
 import ScrambleButton from "../ScrambleButton/ScrambleButton";
+import { MenuIcon } from "../Icons/Icons";
 
 import { useEffect, useState } from "react";
 
@@ -40,9 +41,7 @@ export default function Navbar() {
         } `}
       >
         <div className={styles["menu-icon"]} onClick={toggleMenu}>
-          <svg className={styles["menu-icon__icon"]}>
-            <use href="/icons/sprite.svg#icon-menu"></use>
-          </svg>
+          <MenuIcon />
         </div>
         <ul className={`${styles.pages} ${isMobile ? styles["open"] : ""}`}>
           <li>
