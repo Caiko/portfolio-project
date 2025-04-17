@@ -1,10 +1,10 @@
 .container {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   align-content: center;
   gap: 0.5rem;
   &__text {
-    text-align: center;
+    align-self: start;
     & > * {
       color: white;
     }

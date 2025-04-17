@@ -20,7 +20,7 @@
   }
 
   &__events {
-    grid-column: col-start 2 / full-end;
+    grid-column: col-start 2 / content-end;
     grid-row: events-start / events-end;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(0, 1fr));

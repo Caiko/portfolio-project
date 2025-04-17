@@ -1,3 +1,4 @@
+@use "styles/abstracts/variables.scss" as *;
 .container {
   display: grid;
   grid-template-columns:
@@ -14,7 +15,7 @@
     );
 
   &__about-me {
-    background-color: #1a1a1a;
+    background-color: $color-dark-grey-1;
     grid-row: pannel-start / pannel-end;
     grid-column: full-start / full-end;
     display: grid;
