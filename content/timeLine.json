@@ -1,0 +1,31 @@
+{
+  "slidingBox": {
+    "title": "Bat Caiko kura",
+    "subTitle": "Donaprena Alonzo",
+    "textArea": "Mnogo dobre napisan tekst za tova koi i kakvo sum az s koito hvashtam ochite na posetitelite. Dobur poslepis."
+  },
+
+  "event1": {
+    "heading": "Global Business Engineering, VIA ",
+    "description": "This is the first event.",
+    "period": "2021-2026"
+  },
+
+  "event2": {
+    "heading": "System Administrator, Internship",
+    "description": "This is the first event.",
+    "period": "2025-2025"
+  },
+
+  "event3": {
+    "heading": "CMS Developer, Internship",
+    "description": "Developed websites using WordPress and Elementor. Also handled SEO and link building for the exsisting customers.",
+    "period": "2020-2020"
+  },
+
+  "event4": {
+    "heading": "Marketing Management, EASV",
+    "description": "I came to Denmark with an interest for studying digital marketing, I soon found a passion for Web Development. After graduating I switched to Business Engineering.",
+    "period": "2018-2020"
+  }
+}

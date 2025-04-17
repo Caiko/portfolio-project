@@ -8,9 +8,9 @@ export default function Event({ imageSrc, heading, description, period }) {
         <Image src={imageSrc} alt={heading} className={styles.image} fill />
       </div>
       <div className={styles["container__text"]}>
-        <h3 className={styles.heading}>{heading}</h3>
-        <h4 className={styles.period}>{period}</h4>
-        <p className={styles.description}>{description}</p>
+        <h3 className={`${styles.heading} sm-h1`}>{heading}</h3>
+        <h4 className={`${styles.period} sm-h2`}>{period}</h4>
+        <p className={`${styles.description} sm-p`}>{description}</p>
       </div>
     </div>
   );

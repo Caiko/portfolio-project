@@ -1,6 +1,6 @@
 .container {
   grid-row: header-row-start / pannel-end 1;
-  grid-column: col-start 1 / content-end;
+  grid-column: col-start 1 / full-end;
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows:
@@ -20,11 +20,11 @@
   }
 
   &__events {
-    grid-column: col-start 2 / content-end;
+    grid-column: col-start 2 / full-end;
     grid-row: events-start / events-end;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
-    gap: 10rem;
+    gap: 15rem;
     height: 100%;
 
     // Use this in case the autofit is not scaling/responsive

@@ -1,6 +1,6 @@
 import Icons from "../../../Icons/Icons";
 import styles from "./SlidingBox.module.scss";
-import data from "@/content/data.json";
+import data from "@/content/timeLine.json";
 export default function SlidingBox() {
   return (
     <div className={styles.container}>
