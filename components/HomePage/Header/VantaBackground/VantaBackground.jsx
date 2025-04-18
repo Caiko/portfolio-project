@@ -26,8 +26,8 @@ export default function VantaBackground() {
         color: 0x00fffc, // Line color
         backgroundColor: 0x1a1a1a, // Background
         points: 10.0, // Number of points
-        maxDistance: 20.0, // Distance to link points
-        spacing: 15.0, // Space between points
+        maxDistance: 23.0, // Distance to link points
+        spacing: 20.0, // Space between points
       });
       setVantaEffect(effect);
     }

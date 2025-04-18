@@ -6,12 +6,7 @@ export default function Header({ parentStyles, title, textArea }) {
     <div className={`${styles.container} ${parentStyles}`}>
       <div className={styles["header__1"]}>
         <VantaBackground />
-        {/* <Image
-          src={cityImage}
-          alt="City Background"
-          priority={true} // Preloads the image for better performance
-          className={styles["header__1-inner"]}
-        /> */}
+        <div className={styles["header__1-inner"]}></div>
       </div>
       <div className={styles["header__2"]}></div>
       <div className={styles["header__3"]}></div>
