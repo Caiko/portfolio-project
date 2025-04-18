@@ -26,38 +26,54 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/nexterBanner.png"}
+          stack={[
+            iconMap["Sass"],
+            iconMap["HTML"],
+            iconMap["CSS"],
+            iconMap["Post"],
+          ]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/pokemonBanner.png"}
+          stack={[iconMap["React"], iconMap["Node"]]}
         />
 
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/webshopBanner.png"}
-          git
+          stack={[iconMap["React"], iconMap["CSS"]]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/pmBanner.png"}
+          stack={[iconMap["React"], iconMap["Tailwind"]]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/timerBanner.png"}
+          stack={[iconMap["React"], iconMap["CSS"]]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/trilloBanner.png"}
+          stack={[
+            iconMap["Sass"],
+            iconMap["CSS"],
+            iconMap["HTML"],
+            iconMap["Post"],
+          ]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/tictactoeBanner.png"}
+          stack={[iconMap["React"], iconMap["CSS"]]}
         />
       </div>
     </div>

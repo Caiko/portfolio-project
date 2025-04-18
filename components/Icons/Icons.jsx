@@ -154,6 +154,35 @@ export function MongooseIcon() {
     </svg>
   );
 }
+export function CSSIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-css3"></use>
+    </svg>
+  );
+}
+export function PostIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-PostCSS"></use>
+    </svg>
+  );
+}
+export function NodeIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-node-dot-js"></use>
+    </svg>
+  );
+}
+
+export function HTMLIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-html5"></use>
+    </svg>
+  );
+}
 
 export const iconMap = {
   React: ReactIcon,
@@ -169,6 +198,10 @@ export const iconMap = {
   SQLite: SQLiteIcon,
   PostgresSQL: PostgresSQLIcon,
   Mongoose: MongooseIcon,
+  CSS: CSSIcon,
+  Post: PostIcon,
+  Node: NodeIcon,
+  HTML: HTMLIcon,
 };
 
 // export function Icon({ name, href }) {
