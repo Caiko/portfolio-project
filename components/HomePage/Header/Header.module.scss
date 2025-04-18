@@ -23,6 +23,7 @@
   &__1 {
     grid-row: header-row-start 1 / header-row-end 10;
     inset: -1rem -1rem 0 -1rem;
+    background-color: $color-dark-grey-1;
     &-inner {
       filter: blur(5px);
       object-fit: cover;

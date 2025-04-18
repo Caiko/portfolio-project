@@ -95,10 +95,96 @@ export function MenuIcon() {
   );
 }
 
+export function ThreejsIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-Threejs"></use>
+    </svg>
+  );
+}
+
+export function FirebaseIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-Firebase"></use>
+    </svg>
+  );
+}
+
+export function NetIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-NET"></use>
+    </svg>
+  );
+}
+
+export function MongoDBIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-MongoDB"></use>
+    </svg>
+  );
+}
+export function CIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-C"></use>
+    </svg>
+  );
+}
+export function SQLiteIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-SQLite"></use>
+    </svg>
+  );
+}
+export function PostgresSQLIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-PostgresSQL"></use>
+    </svg>
+  );
+}
+export function MongooseIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-Mongoosejs"></use>
+    </svg>
+  );
+}
+
 export const iconMap = {
   React: ReactIcon,
   Next: NextIcon,
   Nest: NestIcon,
   Sass: SassIcon,
   Tailwind: TailwindIcon,
+  Threejs: ThreejsIcon,
+  Firebase: FirebaseIcon,
+  Net: NetIcon,
+  MongoDB: MongoDBIcon,
+  C: CIcon,
+  SQLite: SQLiteIcon,
+  PostgresSQL: PostgresSQLIcon,
+  Mongoose: MongooseIcon,
 };
+
+export function Icon({ name, href }) {
+  const iconSvg = (
+    <svg className={styles.icon}>
+      <use href={`/icons/sprite.svg#icon-${name}`}></use>
+    </svg>
+  );
+
+  if (href) {
+    return (
+      <a target="_blank" rel="noopener noreferrer" href={href}>
+        {iconSvg}
+      </a>
+    );
+  }
+
+  return iconSvg;
+}

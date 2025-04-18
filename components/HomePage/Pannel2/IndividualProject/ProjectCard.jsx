@@ -25,13 +25,15 @@ export default function ProjectCard({ image, title, description, stack = [] }) {
               <IconComponent key={idx} />
             ))}
           </div>
-          <div className={styles["container__card-back__text"]}>
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </div>
-          <div className={styles["container__card-back__icon"]}>
-            <h4>Visit:</h4>
-            <GitHubIcon />
+          <div className={styles["container__card-back__content"]}>
+            <div className={styles["container__card-back__content__text"]}>
+              <h3 className="sm-h2">{title}</h3>
+              <p className="sm-p">{description}</p>
+            </div>
+            <div className={styles["container__card-back__content__icon"]}>
+              <h4>Project:</h4>
+              <GitHubIcon />
+            </div>
           </div>
         </div>
       </div>

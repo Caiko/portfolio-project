@@ -13,13 +13,13 @@ export default function EventLine() {
       <TimeLine />
       <div className={styles["container__events"]}>
         <Event
-          imageSrc={viaLogo}
+          imageSrc={linkBoxLogo}
           heading={timeLine.event1.heading}
           description={timeLine.event1.description}
           period={timeLine.event1.period}
         />
         <Event
-          imageSrc={linkBoxLogo}
+          imageSrc={viaLogo}
           heading={timeLine.event2.heading}
           description={timeLine.event2.description}
           period={timeLine.event2.period}

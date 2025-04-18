@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
+import styles from "./VantaBackground.module.scss";
 
 export default function VantaBackground() {
   const vantaRef = useRef(null);
@@ -36,5 +37,5 @@ export default function VantaBackground() {
     };
   }, [vantaEffect]);
 
-  return <div ref={vantaRef} style={{ width: "100%", height: "100vh" }} />;
+  return <div ref={vantaRef} className={styles.vanta} />;
 }

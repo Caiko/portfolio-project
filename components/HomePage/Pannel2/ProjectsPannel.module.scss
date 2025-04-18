@@ -30,7 +30,7 @@
   &__projects {
     grid-column: content-start / content-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
     align-content: center;
     justify-content: center;
     gap: clamp(4rem, 6vw, 12rem);

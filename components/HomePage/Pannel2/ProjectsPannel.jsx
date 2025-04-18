@@ -13,33 +13,49 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/foodiesBanner.png"}
-          stack={[
-            iconMap["React"],
-            iconMap["Next"],
-            iconMap["Sass"],
-            iconMap["Tailwind"],
-          ]}
+          stack={[iconMap["Next"], iconMap["Tailwind"], iconMap["SQLite"]]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
-          image={"/projectCards/foodiesBanner.png"}
+          image={"/projectCards/dndBanner.png"}
           stack={[iconMap["React"], iconMap["Nest"], iconMap["Sass"]]}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
-          image={"/projectCards/foodiesBanner.png"}
+          image={"/projectCards/webshopBanner.png"}
+          git
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
-          image={"/projectCards/foodiesBanner.png"}
+          image={"/projectCards/nexterBanner.png"}
         />
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
-          image={"/projectCards/foodiesBanner.png"}
+          image={"/projectCards/pokemonBanner.png"}
+        />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/pmBanner.png"}
+        />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/timerBanner.png"}
+        />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/trilloBanner.png"}
+        />
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/tictactoeBanner.png"}
         />
       </div>
     </div>
