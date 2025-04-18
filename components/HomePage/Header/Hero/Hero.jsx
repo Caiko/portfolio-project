@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-import meImage from "@/public/m2.png";
 
 export default function Hero({ title, textArea, subTitle }) {
   return (
@@ -26,7 +25,8 @@ export default function Hero({ title, textArea, subTitle }) {
       </div>
       <div className={styles["hero-container__hero-image-container"]}>
         <Image
-          src={meImage}
+          // src="/marinnikolov.png"
+          src="/marin.png"
           alt="Image of Marin Nikolov"
           priority={true} // Preloads the image for better performance
           className={styles["hero-container__hero-image-container__image"]}

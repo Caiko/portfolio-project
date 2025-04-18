@@ -1,6 +1,4 @@
 import styles from "./Header.module.scss";
-import Image from "next/image";
-import cityImage from "@/public/city.jpg"; // Adjust the path as necessary
 import VantaBackground from "./VantaBackground/VantaBackground";
 
 export default function Header({ parentStyles, title, textArea }) {

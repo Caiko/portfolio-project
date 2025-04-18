@@ -171,20 +171,20 @@ export const iconMap = {
   Mongoose: MongooseIcon,
 };
 
-export function Icon({ name, href }) {
-  const iconSvg = (
-    <svg className={styles.icon}>
-      <use href={`/icons/sprite.svg#icon-${name}`}></use>
-    </svg>
-  );
+// export function Icon({ name, href }) {
+//   const iconSvg = (
+//     <svg className={styles.icon}>
+//       <use href={`/icons/sprite.svg#icon-${name}`}></use>
+//     </svg>
+//   );
 
-  if (href) {
-    return (
-      <a target="_blank" rel="noopener noreferrer" href={href}>
-        {iconSvg}
-      </a>
-    );
-  }
+//   if (href) {
+//     return (
+//       <a target="_blank" rel="noopener noreferrer" href={href}>
+//         {iconSvg}
+//       </a>
+//     );
+//   }
 
-  return iconSvg;
-}
+//   return iconSvg;
+// }

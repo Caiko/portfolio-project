@@ -19,14 +19,9 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/dndBanner.png"}
-          stack={[iconMap["React"], iconMap["Nest"], iconMap["Sass"]]}
+          stack={[iconMap["C"], iconMap["Net"], iconMap["SQLite"]]}
         />
-        <ProjectCard
-          title={"Georgi"}
-          description={"Atanasov"}
-          image={"/projectCards/webshopBanner.png"}
-          git
-        />
+
         <ProjectCard
           title={"Georgi"}
           description={"Atanasov"}
@@ -36,6 +31,13 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/pokemonBanner.png"}
+        />
+
+        <ProjectCard
+          title={"Georgi"}
+          description={"Atanasov"}
+          image={"/projectCards/webshopBanner.png"}
+          git
         />
         <ProjectCard
           title={"Georgi"}
