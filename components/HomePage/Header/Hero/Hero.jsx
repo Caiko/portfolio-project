@@ -15,11 +15,20 @@ export default function Hero({ title, textArea, subTitle }) {
             }
           >
             <h1 id="intro-heading" className="h1">
-              {title}
+              {title} <span className="color-green">Marin!</span>
             </h1>
-            <h2 className="h2">{subTitle}</h2>
+            <h2 className="h2 ">
+              {subTitle} <span className="color-green">Web Developer!</span>
+            </h2>
             <p className="p">{textArea}</p>
-            <button className="btn">Contant/Cv</button>
+            <a
+              className="btn"
+              href="/cv/marin-nikolov-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View CV
+            </a>
           </header>
         </section>
       </div>

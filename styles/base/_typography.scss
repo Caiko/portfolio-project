@@ -7,7 +7,7 @@
 }
 
 .h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   color: $color-light-grey-2;
 }
@@ -22,13 +22,43 @@
   color: #fff;
   border: none;
   border-radius: 0;
-  font-size: 1.5rem;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 
   &:hover {
-    background-color: $color-dark-grey-3;
+    background-color: $color-dark-grey-2;
+    transform: scale(1.1);
   }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.color-green {
+  color: $color-green;
+}
+
+.color-red {
+  color: $color-red;
+}
+
+.color-sun-faded {
+  color: $color-sun-faded;
+}
+
+//////////////////////////////////////// Typography for small containers ////////////////////////////////////////
+.sm-p {
+  font-size: 14px;
+  // padding: 0 4rem;
+}
+
+.sm-h1 {
+  font-size: 24px;
+}
+.sm-h2 {
+  font-size: 16px;
 }
