@@ -7,10 +7,10 @@ export default function SlidingBox() {
       <div className={styles.slidingBox}>
         <section className="flex flex-col gap-16">
           <div>
-            <h2>{data.slidingBox.title}</h2>
-            <h3>{data.slidingBox.subTitle}</h3>
-            <p>{data.slidingBox.textArea}</p>
-            <Icons />
+            <h2 className="sm-h1 py-4 color-green">{data.slidingBox.title}</h2>
+            <h3 className="sm-h2">{data.slidingBox.subTitle}</h3>
+            <p className="sm-p py-2">{data.slidingBox.textArea}</p>
+            <Icons className={styles.icons} />
           </div>
         </section>
       </div>

@@ -26,12 +26,7 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/nexterBanner.png"}
-          stack={[
-            iconMap["Sass"],
-            iconMap["HTML"],
-            iconMap["CSS"],
-            iconMap["Post"],
-          ]}
+          stack={[iconMap["Sass"]]}
         />
         <ProjectCard
           title={"Georgi"}
@@ -62,12 +57,7 @@ export default function ProjectsPannel() {
           title={"Georgi"}
           description={"Atanasov"}
           image={"/projectCards/trilloBanner.png"}
-          stack={[
-            iconMap["Sass"],
-            iconMap["CSS"],
-            iconMap["HTML"],
-            iconMap["Post"],
-          ]}
+          stack={[iconMap["Sass"]]}
         />
         <ProjectCard
           title={"Georgi"}
