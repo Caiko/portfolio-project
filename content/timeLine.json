@@ -1,13 +1,12 @@
 {
   "slidingBox": {
-    "title": "How I got here",
-    "subTitle": "",
-    "textArea": "I started my learning journey in 2018 with an interest in digital marketing and analytics. This quickly changed into a passion for web development and programming, leading me to pursue a degree in Global Business Engineering."
+    "title": "What I do:",
+    "subTitle": "How to find me:"
   },
 
   "event1": {
     "heading": "System Administrator, Internship",
-    "description": "During this internship, I am building a CRM system with a cutomer's portal for Linkbox using EspoCRM. I am using PHP hooks and creating or changing entities, fields, and relationships to meet the company's needs.",
+    "description": "During this internship, I am building a CRM system with a customer's portal for Linkbox using EspoCRM. I am using PHP hooks and creating or changing entities, fields, and relationships to meet the company's needs.",
     "period": "February 2025 - June 2025"
   },
 

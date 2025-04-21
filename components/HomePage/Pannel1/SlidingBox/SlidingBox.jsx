@@ -1,6 +1,7 @@
-import Icons from "../../../Icons/Icons";
+import Icons, { Icon } from "../../../Icons/Icons";
 import styles from "./SlidingBox.module.scss";
 import data from "@/content/timeLine.json";
+
 export default function SlidingBox() {
   return (
     <div className={styles.container}>
@@ -8,8 +9,19 @@ export default function SlidingBox() {
         <section className="flex flex-col gap-16">
           <div>
             <h2 className="sm-h1 py-4 color-green">{data.slidingBox.title}</h2>
-            <h3 className="sm-h2">{data.slidingBox.subTitle}</h3>
-            <p className="sm-p py-2">{data.slidingBox.textArea}</p>
+            <div className="flex">
+              <Icon name="react" />
+              <Icon name="next-dot-js" />
+              <Icon name="TypeScript" />
+              <Icon name="tailwindcss" />
+              <Icon name="sass" />
+              <Icon name="node-dot-js" />
+              <Icon name="Nestjs" />
+            </div>
+            <h2 className="sm-h1 py-4 color-green">
+              {data.slidingBox.subTitle}
+            </h2>
+            <p className="sm-p ">{data.slidingBox.textArea}</p>
             <Icons className={styles.icons} />
           </div>
         </section>
