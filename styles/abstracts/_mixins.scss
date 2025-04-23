@@ -12,9 +12,9 @@
 }
 
 @mixin top-left-corner {
-  clip-path: polygon(100% 0, 0 0, 100% 10%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 
 @mixin top-right-corner {
-  clip-path: polygon(100% 0, 0 0, 0 10%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
 }
