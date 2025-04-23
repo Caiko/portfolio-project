@@ -73,8 +73,8 @@ export default function Navbar() {
           </li>
           <li>
             <ScrambleButton
-              content=".hobbies"
-              href="/hobbies"
+              content=".contact"
+              href="/contact"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}

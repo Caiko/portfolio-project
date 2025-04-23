@@ -19,7 +19,7 @@ export default function SlidingBox() {
                 </Fragment>
               ))}
             </p>
-            {/* <div className="flex">
+            <div className="flex">
               <Icon name="react" />
               <Icon name="next-dot-js" />
               <Icon name="TypeScript" />
@@ -27,7 +27,7 @@ export default function SlidingBox() {
               <Icon name="sass" />
               <Icon name="node-dot-js" />
               <Icon name="Nestjs" />
-            </div> */}
+            </div>
             <h2 className="sm-h1 py-4 color-green">
               {data.slidingBox.subTitle}
             </h2>

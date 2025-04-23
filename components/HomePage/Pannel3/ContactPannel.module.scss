@@ -6,7 +6,6 @@
   background-color: $color-dark-grey-1;
   grid-row: pannel-start 3 / pannel-end 3;
   grid-column: full-start / full-end;
-  height: 100rem;
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows:
@@ -29,10 +28,7 @@
   &__hobbies {
     grid-column: content-start / content-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
-    align-content: center;
-    justify-content: center;
-    gap: 4vw;
+    grid-template-columns: subgrid;
   }
   &__heading {
     grid-column: full-start / full-end;
