@@ -2,12 +2,12 @@
   "slidingBox": {
     "title": "What I do:",
     "textArea": "JavaScript, TypeScript/nFront-end: React, Next.js/nCSS: Tailwind, SASS/nBack-end: Node.js, Express, NestJS",
-    "subTitle": "How to find me:"
+    "subTitle": "Where to find me:"
   },
 
   "event1": {
     "heading": "System Administrator, Internship",
-    "description": "During this internship, I am building a CRM system with a customer's portal for Linkbox using EspoCRM. I am using PHP hooks and creating or changing entities, fields, and relationships to meet the company's needs.",
+    "description": "During this internship, I am building a CRM system with a customer portal for Linkbox using EspoCRM. I am creating and changing entities, fields, and relationships in ESPO to match the internal processes of the company’s roles, teams, and departments. I use custom PHP hooks for specific customizations.",
     "period": "February 2025 - June 2025"
   },
 
