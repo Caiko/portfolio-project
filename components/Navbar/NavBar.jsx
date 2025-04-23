@@ -56,7 +56,7 @@ export default function Navbar() {
           <li>
             <ScrambleButton
               content=".about-me"
-              href="/about"
+              href="#about-me"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
@@ -65,7 +65,7 @@ export default function Navbar() {
           <li>
             <ScrambleButton
               content=".projects"
-              href="/projects"
+              href="#projects"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
@@ -74,7 +74,7 @@ export default function Navbar() {
           <li>
             <ScrambleButton
               content=".contact"
-              href="/contact"
+              href="#contact"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}

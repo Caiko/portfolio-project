@@ -5,7 +5,9 @@ import timeLine from "@/content/timeLine.json";
 export default function EventLine() {
   return (
     <div className={styles.container}>
-      <h1 className={styles["container__about-me-title"]}>.about-me</h1>
+      <h1 id="about-me" className={styles["container__about-me-title"]}>
+        .about-me
+      </h1>
 
       <div className={styles["container__events"]}>
         <Event
