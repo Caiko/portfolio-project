@@ -13,7 +13,7 @@
     [header-end content-start] auto
     [content-end];
 
-  &__hobbies {
+  &__contact {
     grid-column: content-start / content-end;
     display: grid;
     grid-template-columns: subgrid;

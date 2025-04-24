@@ -8,7 +8,7 @@ export default function ContactPannel() {
           .contact
         </h1>
       </div>
-      <div className={styles["container__hobbies"]}></div>
+      <div className={styles["container__contact"]}></div>
     </div>
   );
 }
