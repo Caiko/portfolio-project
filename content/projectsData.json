@@ -1,28 +1,48 @@
 {
-  "foodies": {
-    "title": "Project One",
-    "description": "This is the first project.",
-    "href": "https://example.com/project1"
+  "project1": {
+    "title": "NextLevel Food",
+    "description": "A full-stack Next.js app where users can share their own meal recipes by submitting images and descriptions through a secure form. Input is sanitized using xss and slugify to prevent attacks and ensure clean URLs.",
+    "href": "https://github.com/Caiko/foodies-website"
   },
 
   "project2": {
-    "title": "Project One",
-    "description": "This is the first project.",
-    "href": "https://example.com/project1"
+    "title": "Recycling & Waste Management System",
+    "description": "The project focuses on making recycling more efficient by working with existing infrastructure. Instead of relying on slow monthly reports, it delivers clear, up-to-date insights through interactive data visualizations.",
+    "href": "https://github.com/Mar7inD/DND_Course_Project"
   },
   "project3": {
-    "title": "Project One",
-    "description": "This is the first project.",
-    "href": "https://example.com/project1"
+    "title": "Nexter: Real Estate Website",
+    "description": "A responsive real estate layout built with SCSS, using a modular BEM-based architecture and custom media queries. Emphasizes maintainability with structured partials and advanced CSS Grid for clean, scalable layout control.",
+    "href": "https://github.com/Caiko/nexter-course-project"
   },
   "project4": {
-    "title": "Project One",
-    "description": "This is the first project.",
-    "href": "https://example.com/project1"
+    "title": "Pokédex",
+    "description": "A React-based Pokédex that fetches real-time data from the PokéAPI. Users can browse, search, and view detailed stats for individual Pokémon with intuitive card navigation.",
+    "href": "https://caiko.github.io/Pokedex/"
   },
   "project5": {
-    "title": "Project One",
-    "description": "This is the first project.",
-    "href": "https://example.com/project1"
+    "title": "Elegant Context: Webshop",
+    "description": "A modern e-commerce app built with React and Context API for global state management. Features a real-time cart system and a smooth, modal-based checkout flow",
+    "href": "https://github.com/Caiko/web-shop"
+  },
+  "project6": {
+    "title": "Project Management App",
+    "description": "A project management app built with React and styled using Tailwind CSS. Users can create projects, assign tasks, and manage them.",
+    "href": "https://github.com/Caiko/project-management-app"
+  },
+  "project7": {
+    "title": "Timer Challenge",
+    "description": "A React app that challenges users to stop a countdown timer as accurately as possible. Uses useRef, useImperativeHandle, and React Portals to manage a reusable modal for real-time performance feedback. ",
+    "href": "https://github.com/Caiko/timer-challenge"
+  },
+  "project8": {
+    "title": "Trillo: Hotel Booking Website",
+    "description": "A responsive web layout styled with SCSS and Flexbox, featuring a modular architecture with reusable components and clean, maintainable styles. Built using BEM methodology, SCSS partials, and Flexbox for cross-device adaptability.",
+    "href": "https://github.com/Caiko/trillo"
+  },
+  "project9": {
+    "title": "Tic Tac Toe",
+    "description": "A classic two-player Tic Tac Toe game built with React. It features a simple win-check algorithm. Designed for simplicity and learning, with a clean and intuitive UI.",
+    "href": "https://github.com/Caiko/tic-tac-toe"
   }
 }

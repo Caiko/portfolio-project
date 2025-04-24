@@ -3,7 +3,13 @@ import styles from "./ProjectCard.module.scss";
 import Image from "next/image";
 import { GitHubIcon } from "@/components/Icons/Icons";
 
-export default function ProjectCard({ image, title, description, stack = [] }) {
+export default function ProjectCard({
+  image,
+  title,
+  href,
+  description,
+  stack = [],
+}) {
   console.log("Image URL:", image);
   return (
     <div className={styles.container}>
@@ -27,12 +33,12 @@ export default function ProjectCard({ image, title, description, stack = [] }) {
           </div>
           <div className={styles["container__card-back__content"]}>
             <div className={styles["container__card-back__content__text"]}>
-              <h3 className="sm-h2">{title}</h3>
-              <p className="sm-p">{description}</p>
+              <h3 className="sm-h2 color-green">{title}</h3>
+              <p className="sm-p py-2">{description}</p>
             </div>
             <div className={styles["container__card-back__content__icon"]}>
               <h4>Project:</h4>
-              <GitHubIcon />
+              <GitHubIcon href={href} />
             </div>
           </div>
         </div>
