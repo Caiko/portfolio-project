@@ -5,7 +5,6 @@ import data from "@/content/hero.json";
 import SlidingBox from "@/components/HomePage/Pannel1/SlidingBox/SlidingBox";
 import EventLine from "@/components/HomePage/Pannel1/EventLine/EventLine";
 import ProjectsPannel from "@/components/HomePage/Pannel2/ProjectsPannel.jsx";
-import ContactPannel from "@/components/HomePage/Pannel3/ContactPannel";
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
         title={data.hero.title}
         textArea={data.hero.textArea}
         subTitle={data.hero.subTitle}
-      ></Hero>
+      />
       <div className={styles["container__about-me"]}>
         <SlidingBox />
       </div>
@@ -25,12 +24,6 @@ export default function Home() {
       <div className={styles["container__projects"]}>
         <ProjectsPannel />
       </div>
-      <div className={styles["container__hobbies"]}>
-        <ContactPannel />
-      </div>
-
-      {/* <div className="container-4">There is some content here</div>
-      <div className="container-5">There is some content here</div> */}
     </div>
   );
 }
