@@ -23,7 +23,7 @@ export default function VantaBackground() {
         minWidth: 200,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0xa24452, // Line color
+        color: 0x64ffda, // Line color
         backgroundColor: 0x1a1a1a, // Background
         points: 10.0, // Number of points
         maxDistance: 23.0, // Distance to link points
