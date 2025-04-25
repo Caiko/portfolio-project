@@ -15,6 +15,9 @@
   @media (max-width: $tablet-small) {
     font-size: 35px;
   }
+  @media (max-width: $mobile) {
+    font-size: 20px;
+  }
 }
 
 .h2 {

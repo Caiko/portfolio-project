@@ -30,6 +30,14 @@
         [pannel-start] min-content [pannel-end]
       );
   }
+  @media (max-width: $mobile) {
+    grid-template-rows:
+      [header-start] repeat(20, [header-row-start] 2.3vh [header-row-end])
+      [header-end pannel-1-start] repeat(
+        3,
+        [pannel-start] min-content [pannel-end]
+      );
+  }
 
   &__about-me {
     background-color: $color-dark-grey-1;

@@ -25,6 +25,9 @@
     @media (max-width: $tablet-smallest) {
       left: -6rem; // position to the left
     }
+    @media (max-width: $mobile) {
+      left: -5rem;
+    }
   }
 
   &::before {
@@ -40,6 +43,9 @@
 
     @media (max-width: $tablet-smallest) {
       left: -4.75rem; // position to the left
+    }
+    @media (max-width: $mobile) {
+      left: -3.75rem;
     }
   }
   &:first-child::before {

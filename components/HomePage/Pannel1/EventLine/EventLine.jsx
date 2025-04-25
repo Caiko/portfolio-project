@@ -1,6 +1,8 @@
 import styles from "./EventLine.module.scss";
 import Event from "./Event/Event.jsx";
 import timeLine from "@/content/timeLine.json";
+import data from "@/content/timeLine.json";
+import Icons, { Icon } from "@/components/Icons/Icons.jsx";
 
 export default function EventLine() {
   return (
@@ -8,6 +10,22 @@ export default function EventLine() {
       <h1 id="about-me" className={styles["container__about-me-title"]}>
         .about-me
       </h1>
+
+      <div className={styles.skills}>
+        <h2 className="sm-h1 py-4 color-green">{data.slidingBox.title}</h2>
+        <div className="flex">
+          <Icon name="TypeScript" />
+          <Icon name="react" />
+          <Icon name="next-dot-js" />
+          <Icon name="tailwindcss" />
+          <Icon name="sass" />
+          <Icon name="node-dot-js" />
+          <Icon name="Nestjs" />
+        </div>
+        <h2 className="sm-h1 py-4 color-green">{data.slidingBox.subTitle}</h2>
+
+        <Icons className={styles.icons} />
+      </div>
 
       <div className={styles["container__events"]}>
         <Event

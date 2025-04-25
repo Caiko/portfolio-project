@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
-  grid-column: content-start / full-end;
+  grid-column: full-start / full-end;
   grid-row: header-row-start 2 / header-row-end 20;
   z-index: 2;
   overflow-x: hidden;
@@ -20,6 +20,9 @@
         flex-direction: column;
         gap: 3rem;
         align-items: flex-start;
+        @media (max-width: $mobile) {
+          gap: 2rem;
+        }
       }
     }
     @media (max-width: $medium-screen) {
@@ -27,6 +30,11 @@
     }
     @media (max-width: $medium-screen) {
       grid-column: content-start / col-end 5;
+    }
+    @media (max-width: $mobile) {
+      grid-row: header-row-start 3 / header-row-end 20;
+      grid-column: full-start / col-end 5;
+      padding-left: 1.5rem;
     }
   }
 
