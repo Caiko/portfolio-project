@@ -1,3 +1,5 @@
+@use "styles/abstracts/variables.scss" as *;
+
 .hero-container {
   display: grid;
   grid-template-columns: subgrid;
@@ -5,6 +7,7 @@
   grid-column: content-start / full-end;
   grid-row: header-row-start 2 / header-row-end 20;
   z-index: 2;
+  overflow-x: hidden;
 
   &__hero-text-container {
     padding: 5rem 0; // keep an eye out for this
@@ -19,6 +22,12 @@
         align-items: flex-start;
       }
     }
+    @media (max-width: $medium-screen) {
+      grid-row: header-row-start 5 / header-row-end 20;
+    }
+    @media (max-width: $medium-screen) {
+      grid-column: content-start / col-end 5;
+    }
   }
 
   &__hero-image-container {
@@ -30,8 +39,24 @@
     width: 100%;
     height: 100%;
 
+    @media (max-width: $tablet) {
+      grid-row: header-row-start 2 / header-row-end 15;
+    }
+    @media (max-width: $tablet-small) {
+      grid-row: header-row-start 3 / header-row-end 15;
+    }
+    @media (max-width: $tablet-smallest) {
+      width: 110%;
+    }
+
     &__image {
       object-fit: cover;
     }
+  }
+}
+
+.para {
+  @media (max-width: $medium-screen) {
+    display: none;
   }
 }

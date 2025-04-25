@@ -1,3 +1,5 @@
+@use "styles/abstracts/variables.scss" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 *,
@@ -9,6 +11,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
+
+  @media (max-width: $medium-screen) {
+    font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
+  }
 }
 
 body {

@@ -1,3 +1,4 @@
+@use "styles/abstracts/variables.scss" as *;
 .container {
   grid-row: header-row-start / pannel-end 1;
   grid-column: col-start 1 / full-end;
@@ -26,10 +27,5 @@
     grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
     gap: 15rem;
     height: 100%;
-
-    // Use this in case the autofit is not scaling/responsive
-    // display: flex;
-    // flex-direction: column;
-    // gap: 10rem;
   }
 }

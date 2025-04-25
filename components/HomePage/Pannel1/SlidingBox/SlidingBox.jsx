@@ -10,7 +10,7 @@ export default function SlidingBox() {
         <section className="flex flex-col gap-16">
           <div>
             <h2 className="sm-h1 py-4 color-green">{data.slidingBox.title}</h2>
-            <p className="sm-p ">
+            {/* <p className="sm-p ">
               {data.slidingBox.textArea.split("/n").map((line, key) => (
                 <Fragment key={key}>
                   {line}
@@ -18,11 +18,11 @@ export default function SlidingBox() {
                   <br />
                 </Fragment>
               ))}
-            </p>
+            </p> */}
             <div className="flex">
+              <Icon name="TypeScript" />
               <Icon name="react" />
               <Icon name="next-dot-js" />
-              <Icon name="TypeScript" />
               <Icon name="tailwindcss" />
               <Icon name="sass" />
               <Icon name="node-dot-js" />

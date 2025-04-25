@@ -14,6 +14,23 @@
       [pannel-start] min-content [pannel-end]
     );
 
+  @media (max-width: $large-screen) {
+    grid-template-rows:
+      [header-start] repeat(20, [header-row-start] 6vh [header-row-end])
+      [header-end pannel-1-start] repeat(
+        3,
+        [pannel-start] min-content [pannel-end]
+      );
+  }
+  @media (max-width: $medium-screen) {
+    grid-template-rows:
+      [header-start] repeat(20, [header-row-start] 3vh [header-row-end])
+      [header-end pannel-1-start] repeat(
+        3,
+        [pannel-start] min-content [pannel-end]
+      );
+  }
+
   &__about-me {
     background-color: $color-dark-grey-1;
     grid-row: pannel-start / pannel-end;
@@ -29,6 +46,10 @@
       grid-template-columns: subgrid;
       grid-template-rows: subgrid;
       z-index: 3;
+
+      @media (max-width: $medium-screen) {
+        grid-column: full-start / full-end;
+      }
     }
   }
 

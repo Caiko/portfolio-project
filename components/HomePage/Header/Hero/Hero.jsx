@@ -20,9 +20,9 @@ export default function Hero({ title, textArea, subTitle }) {
             <h2 className="h2 ">
               {subTitle} <span className="color-green">Web Developer!</span>
             </h2>
-            <p className="p">{textArea}</p>
+            <p className={`${styles["para"]} p`}>{textArea}</p>
             <a
-              className="btn"
+              className={`${styles["button"]} btn`}
               href="/cv/marin-nikolov-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"

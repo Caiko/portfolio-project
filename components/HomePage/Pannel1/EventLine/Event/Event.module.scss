@@ -22,6 +22,9 @@
     border-radius: 9999px;
     border: 0.5rem solid white;
     background-color: $color-primary;
+    @media (max-width: $tablet-smallest) {
+      left: -6rem; // position to the left
+    }
   }
 
   &::before {
@@ -34,6 +37,10 @@
     width: 0.5rem;
     height: 175%;
     background-color: white;
+
+    @media (max-width: $tablet-smallest) {
+      left: -4.75rem; // position to the left
+    }
   }
   &:first-child::before {
     transform: translateY(0%);

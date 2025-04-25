@@ -7,6 +7,15 @@
 
   &:hover .container__card {
     transform: rotateX(180deg);
+    @media (max-width: $tablet) {
+      transform: none;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &:active .container__card {
+      transform: rotateX(180deg);
+    }
   }
 
   &__card {
