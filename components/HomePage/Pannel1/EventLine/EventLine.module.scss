@@ -37,12 +37,12 @@
     color: white;
     font-size: 6rem;
     justify-self: end;
-    padding-top: 10rem;
 
     @media (max-width: $mobile) {
       grid-column: col-start 1 / full-end;
       font-size: 4rem;
       padding-right: 4rem;
+      padding-top: 10rem;
     }
   }
 
