@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import styles from "./ProjectCard.module.scss";
 import Image from "next/image";
 import { GitHubIcon } from "@/components/Icons/Icons";
+import { useState } from "react";
 
 export default function ProjectCard({
   image,
@@ -10,9 +12,16 @@ export default function ProjectCard({
   description,
   stack = [],
 }) {
-  console.log("Image URL:", image);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${isFlipped ? styles.flipped : ""}`}
+      onClick={handleCardClick}
+    >
       <div className={styles["container__card"]}>
         {/* Front side*/}
         <div className={styles["container__card-front"]}>

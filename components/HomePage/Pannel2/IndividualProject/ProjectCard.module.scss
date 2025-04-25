@@ -12,12 +12,6 @@
     }
   }
 
-  @media (max-width: $tablet) {
-    &:active .container__card {
-      transform: rotateX(180deg);
-    }
-  }
-
   &__card {
     position: relative;
     width: 100%;
@@ -89,5 +83,11 @@
         justify-content: center;
       }
     }
+  }
+}
+
+@media (max-width: $tablet) {
+  .flipped .container__card {
+    transform: rotateX(180deg);
   }
 }

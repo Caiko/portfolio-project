@@ -1,3 +1,4 @@
+"use client";
 import ProjectCard from "./IndividualProject/ProjectCard";
 import styles from "./ProjectsPannel.module.scss";
 import { iconMap } from "@/components/Icons/Icons";
