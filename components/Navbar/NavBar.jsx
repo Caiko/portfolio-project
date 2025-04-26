@@ -28,9 +28,9 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsMobile(!isMobile);
-    console.log("Menu toggled");
-    console.log(isMobile);
   };
+
+  const closeMenu = () => setIsMobile(false);
 
   return (
     <header>
@@ -44,40 +44,44 @@ export default function Navbar() {
           <MenuIcon />
         </div>
         <ul className={`${styles.pages} ${isMobile ? styles["open"] : ""}`}>
-          <li>
+          <li onClick={toggleMenu}>
             <ScrambleButton
               content=".home"
               href="/"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
+              onClick={closeMenu}
             />
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <ScrambleButton
               content=".about-me"
               href="#about-me"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
+              onClick={closeMenu}
             />
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <ScrambleButton
               content=".projects"
               href="#projects"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
+              onClick={toggleMenu}
             />
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <ScrambleButton
               content=".contact"
               href="#contact"
               parentStyles={`${styles.link} ${
                 isScrolled && styles["link__scrolled"]
               }`}
+              onClick={toggleMenu}
             />
           </li>
         </ul>

@@ -54,6 +54,10 @@
       padding-top: 1rem;
       z-index: 2;
 
+      @media (max-width: $mobile) {
+        font-size: 4rem;
+      }
+
       padding-left: 5vw;
     }
   }

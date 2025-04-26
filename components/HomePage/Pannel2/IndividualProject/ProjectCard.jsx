@@ -43,10 +43,9 @@ export default function ProjectCard({
           <div className={styles["container__card-back__content"]}>
             <div className={styles["container__card-back__content__text"]}>
               <h3 className="sm-h2 color-green">{title}</h3>
-              <p className="sm-p py-2">{description}</p>
+              <p className="sm-p py-2 color-green">{description}</p>
             </div>
             <div className={styles["container__card-back__content__icon"]}>
-              <h4>Project:</h4>
               <GitHubIcon href={href} />
             </div>
           </div>
