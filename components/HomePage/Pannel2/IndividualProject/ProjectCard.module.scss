@@ -9,11 +9,12 @@
     height: 24rem;
   }
 
-  &:hover .container__card {
+  &.flipped &__card {
     transform: rotateX(180deg);
-    @media (max-width: $tablet) {
-      transform: none;
-    }
+  }
+
+  &:hover .container__card {
+    cursor: pointer;
   }
 
   &__card {
@@ -82,11 +83,5 @@
         justify-content: center;
       }
     }
-  }
-}
-
-@media (max-width: $tablet) {
-  .flipped .container__card {
-    transform: rotateX(180deg);
   }
 }
