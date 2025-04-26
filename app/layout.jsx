@@ -5,7 +5,7 @@ import "@/styles/globals.scss";
 export const metadata = {
   title: "Marin Nikolov",
   description:
-    "Showcasing Dimitar Terziev's projects, skills, and experience in software development.",
+    "Showcasing Marin Nikolov's Portfolio: projects, skills, and experience in web development.",
   keywords: [
     "Marin Nikolov",
     "Portfolio",
