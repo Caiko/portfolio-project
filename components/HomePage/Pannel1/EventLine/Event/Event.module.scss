@@ -5,6 +5,7 @@
   align-content: center;
   position: relative;
   gap: 0.5rem;
+
   &__text {
     align-self: start;
   }
@@ -23,7 +24,7 @@
       left: -6rem; // position to the left
     }
     @media (max-width: $mobile) {
-      left: -5rem;
+      display: none;
     }
   }
 
@@ -42,7 +43,7 @@
       left: -4.75rem; // position to the left
     }
     @media (max-width: $mobile) {
-      left: -3.75rem;
+      display: none;
     }
   }
   &:first-child::before {

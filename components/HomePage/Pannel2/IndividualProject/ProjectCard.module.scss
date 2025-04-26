@@ -5,8 +5,8 @@
   perspective: 1000px;
   margin: 1rem;
   @media (max-width: $mobile) {
-    width: 46rem;
-    height: 28rem;
+    width: 50rem;
+    height: 30rem;
   }
 
   &.flipped &__card {

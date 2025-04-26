@@ -13,12 +13,15 @@ html {
   font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
 
   @media (max-width: $mobile) {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
 body {
   font-family: "Roboto Mono", sans-serif; // Font of  choice
   line-height: 1.6;
-  // background-color: #1a1a1a;
+
+  @media (max-width: $mobile) {
+    background-color: $color-dark-grey-1;
+  }
 }

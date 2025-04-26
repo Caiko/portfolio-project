@@ -22,6 +22,8 @@
         align-items: flex-start;
         @media (max-width: $mobile) {
           gap: 2rem;
+          padding-left: 3rem;
+          padding-top: 2rem;
         }
       }
     }
