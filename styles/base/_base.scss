@@ -12,12 +12,13 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
 
-  @media (max-width: $medium-screen) {
-    font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
+  @media (max-width: $mobile) {
+    font-size: 50%;
   }
 }
 
 body {
   font-family: "Roboto Mono", sans-serif; // Font of  choice
   line-height: 1.6;
+  // background-color: #1a1a1a;
 }

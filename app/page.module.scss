@@ -32,11 +32,17 @@
   }
   @media (max-width: $mobile) {
     grid-template-rows:
-      [header-start] repeat(20, [header-row-start] 2.3vh [header-row-end])
+      [header-start] repeat(20, [header-row-start] 2.2vh [header-row-end])
       [header-end pannel-1-start] repeat(
         3,
         [pannel-start] min-content [pannel-end]
       );
+    grid-template-columns:
+      [full-start] 1fr [content-start] repeat(
+        8,
+        [col-start] minmax(min-content, 1fr) [col-end]
+      )
+      [content-end] 1fr [full-end];
   }
 
   &__about-me {
