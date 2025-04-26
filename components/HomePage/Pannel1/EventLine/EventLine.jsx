@@ -29,7 +29,7 @@ export default function EventLine() {
 
       <div className={styles["container__events"]}>
         <Event
-          imageSrc={"/eventLogos/linkBox.png"}
+          imageSrc={"/eventLogos/linkbox.png"}
           heading={timeLine.event1.heading}
           description={timeLine.event1.description}
           period={timeLine.event1.period}
