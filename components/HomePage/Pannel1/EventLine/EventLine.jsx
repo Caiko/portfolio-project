@@ -42,7 +42,7 @@ export default function EventLine() {
         />
 
         <Event
-          imageSrc={"/eventLogos/linkBox.png"}
+          imageSrc={"/eventLogos/linkbox.png"}
           heading={timeLine.event3.heading}
           description={timeLine.event3.description}
           period={timeLine.event3.period}
