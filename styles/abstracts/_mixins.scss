@@ -5,7 +5,7 @@
 }
 
 @mixin bottom-half-right {
-  clip-path: polygon(100% 50%, 100% 100%, 0 100%, 0 95%);
+  clip-path: polygon(100.5% 50%, 100.5% 100.5%, 0% 100.5%, 0 95%);
 }
 
 @mixin angled-slice {
@@ -13,16 +13,16 @@
 }
 
 @mixin top-left-corner {
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% -0.5%, -0.5% -0.5%, 100% 100%);
   @media (max-width: $tablet-small) {
-    clip-path: polygon(100% 0, 0 0, 100% 50%);
+    clip-path: polygon(100% -0.5%, -0.5% -0.5%, 100% 50%);
   }
 }
 
 @mixin top-right-corner {
-  clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% -0.5%, -0.5% -0.5%, -0.5% 100%);
   @media (max-width: $tablet-small) {
-    clip-path: polygon(100% 0, 0 0, 0 50%);
+    clip-path: polygon(100% -0.5%, -0.5% -0.5%, -0.5% 50%);
   }
 }
 
