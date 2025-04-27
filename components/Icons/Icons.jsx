@@ -89,7 +89,7 @@ export function ReactIcon() {
 
 export function MenuIcon() {
   return (
-    <svg className={`${styles.icon} `}>
+    <svg className={`${styles.menu} `}>
       <use href="/icons/sprite.svg#icon-menu"></use>
     </svg>
   );

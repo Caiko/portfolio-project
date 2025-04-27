@@ -22,3 +22,20 @@
     transform: scale(1);
   }
 }
+
+.menu {
+  width: 30px;
+  height: 30px;
+  fill: currentColor; // Gamechanger
+  cursor: pointer;
+  margin: 10px;
+
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(1);
+  }
+}
