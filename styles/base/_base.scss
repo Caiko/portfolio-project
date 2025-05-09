@@ -11,6 +11,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 rem = 10px -> easy to calculate and work with
+  scroll-behavior: smooth;
 
   @media (max-width: $mobile) {
     font-size: 45%;
