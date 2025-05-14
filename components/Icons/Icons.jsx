@@ -44,7 +44,7 @@ export default function Icons() {
 export function GitHubIcon({ href }) {
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
-      <svg className={`${styles.icon} `}>
+      <svg className={`${styles.gitIcon} `}>
         <use href="/icons/sprite.svg#icon-github"></use>
       </svg>
     </a>
