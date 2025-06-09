@@ -44,5 +44,11 @@
     "title": "Tic Tac Toe",
     "description": "A classic two-player Tic Tac Toe game built with React. It features a simple win-check algorithm. Designed for simplicity and learning, with a clean and intuitive UI.",
     "href": "https://github.com/Caiko/tic-tac-toe"
+  },
+
+  "rnm": {
+    "title": "Rick and Morty Characters",
+    "description": "A React-based web application that lets users search, browse, and expand character profiles from the Rick and Morty API. This app delivers a table view of characters, expandable rows for deeper insights, and pagination.",
+    "href": "https://caiko.github.io/rick-and-morty-characters/"
   }
 }
