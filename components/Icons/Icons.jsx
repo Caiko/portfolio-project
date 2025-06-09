@@ -79,6 +79,13 @@ export function TailwindIcon() {
     </svg>
   );
 }
+export function ReactQueryIcon() {
+  return (
+    <svg className={`${styles.icon}`}>
+      <use href="/icons/sprite.svg#icon-react-query"></use>
+    </svg>
+  );
+}
 export function ReactIcon() {
   return (
     <svg className={`${styles.icon} `}>
@@ -184,6 +191,22 @@ export function HTMLIcon() {
   );
 }
 
+export function GraphQLIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-GraphQL"></use>
+    </svg>
+  );
+}
+
+export function TypeScriptIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-TypeScript"></use>
+    </svg>
+  );
+}
+
 export const iconMap = {
   React: ReactIcon,
   Next: NextIcon,
@@ -202,6 +225,9 @@ export const iconMap = {
   Post: PostIcon,
   Node: NodeIcon,
   HTML: HTMLIcon,
+  ReactQuery: ReactQueryIcon,
+  GraphQL: GraphQLIcon,
+  TypeScript: TypeScriptIcon,
 };
 
 export function Icon({ name, href }) {

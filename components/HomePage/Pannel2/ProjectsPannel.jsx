@@ -18,6 +18,12 @@ export default function ProjectsPannel() {
           href={projectsData.rnm.href}
           description={projectsData.rnm.description}
           image={"/projectCards/rnmBanner.webp"}
+          stack={[
+            iconMap["React"],
+            iconMap["TypeScript"],
+            iconMap["ReactQuery"],
+            iconMap["GraphQL"],
+          ]}
         />
         <ProjectCard
           title={projectsData.project1.title}
