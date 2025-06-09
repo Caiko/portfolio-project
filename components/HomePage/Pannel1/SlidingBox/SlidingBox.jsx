@@ -23,8 +23,10 @@ export default function SlidingBox() {
               <Icon name="TypeScript" />
               <Icon name="react" />
               <Icon name="next-dot-js" />
+              <Icon name="react-query" />
               <Icon name="tailwindcss" />
               <Icon name="sass" />
+              <Icon name="GraphQL" />
               <Icon name="node-dot-js" />
               <Icon name="Nestjs" />
             </div>
