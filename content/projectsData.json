@@ -18,8 +18,7 @@
   "project4": {
     "title": "Pokédex",
     "description": "A React-based Pokédex that fetches real-time data from the PokéAPI. Users can browse, search, and view detailed stats for individual Pokémon with intuitive card navigation.",
-    "gitHref": "https://caiko.github.io/Pokedex/",
-    "href": "https://pokedex.marinnikolov.com/"
+    "gitHref": "https://caiko.github.io/Pokedex/"
   },
   "project5": {
     "title": "Elegant Context: Webshop",
@@ -34,7 +33,8 @@
   "project7": {
     "title": "Timer Challenge",
     "description": "A React app that challenges users to stop a countdown timer as accurately as possible. Uses useRef, useImperativeHandle, and React Portals to manage a reusable modal for real-time performance feedback. ",
-    "gitHref": "https://github.com/Caiko/timer-challenge"
+    "gitHref": "https://github.com/Caiko/timer-challenge",
+    "href": "https://timer-challenge.marinnikolov.com/"
   },
   "project8": {
     "title": "Trillo: Hotel Booking Website",
@@ -64,5 +64,11 @@
     "description": "Allows users to select a holiday destination from a map. It uses location to arange the selection and display the list based on the closest holiday places. Also uses local storage to save the selected places.",
     "gitHref": "https://github.com/Caiko/holiday-placepicker",
     "href": "https://holiday-placepicker.marinnikolov.com"
+  },
+  "reactQuiz": {
+    "title": "React Quiz App",
+    "description": "A React-based quiz application that allows you to take a quiz on React. It features a timer, score tracking, and a user-friendly interface.",
+    "gitHref": "https://github.com/Caiko/react-quiz",
+    "href": "http://react-quiz.marinnikolov.com/"
   }
 }

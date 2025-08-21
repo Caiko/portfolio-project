@@ -43,6 +43,14 @@ export default function ProjectsPannel() {
           href={projectsData.reactMUI.href}
         />
         <ProjectCard
+          title={projectsData.reactQuiz.title}
+          description={projectsData.reactQuiz.description}
+          image={"/projectCards/reactQuizBanner.webp"}
+          stack={[iconMap["React"], iconMap["CSS"]]}
+          gitHref={projectsData.reactQuiz.gitHref}
+          href={projectsData.reactQuiz.href}
+        />
+        <ProjectCard
           title={projectsData.project1.title}
           description={projectsData.project1.description}
           image={"/projectCards/foodiesBanner.webp"}
