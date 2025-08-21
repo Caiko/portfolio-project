@@ -30,7 +30,7 @@ export default function ProjectsPannel() {
           title={projectsData.holidayPlacepicker.title}
           description={projectsData.holidayPlacepicker.description}
           image={"/projectCards/holidayPlacePickerBanner.webp"}
-          stack={[iconMap["React"], iconMap["TypeScript"]]}
+          stack={[iconMap["React"]]}
           gitHref={projectsData.holidayPlacepicker.gitHref}
           href={projectsData.holidayPlacepicker.href}
         />

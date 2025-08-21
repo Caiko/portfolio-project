@@ -56,7 +56,8 @@
   },
   "reactMUI": {
     "title": "React Material-UI Project",
-    "description": "A React social meadial page built with Material-UI, with a responsive layout, interactive elements, and a user-friendly interface. I used this project to get familiar with Material-UI components and styling.",
+    "description": "A React practice project built with Material-UI, with a dark mode, responsive layout, interactive elements, and a user-friendly interface. I used this project to get familiar with Material-UI components and styling.",
+    "gitHref": "https://github.com/Caiko/react-mui",
     "href": "https://material-ui.marinnikolov.com"
   },
   "holidayPlacepicker": {
