@@ -1,7 +1,7 @@
 @use "@/styles/abstracts/variables" as *;
 .container {
   width: 50rem;
-  height: 22rem;
+  height: 23rem;
   perspective: 1000px;
   margin: 1rem;
   @media (max-width: $mobile) {

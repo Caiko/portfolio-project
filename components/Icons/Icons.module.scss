@@ -3,7 +3,6 @@
   justify-content: start;
   align-items: center;
   gap: 3rem;
-  padding: 1rem 0;
 }
 
 .icon {
@@ -46,7 +45,27 @@
   fill: currentColor; // Gamechanger
   cursor: pointer;
   margin: 1rem;
-  animation: pulse 1.5s ease-in-out infinite;
+  animation: pulse 8s ease-in-out infinite;
+
+  transition: transform 0.2s ease;
+
+  &:hover {
+    animation: none;
+    transform: scale(1.1);
+  }
+  &:active {
+    animation: none;
+    transform: scale(1);
+  }
+}
+
+.sphereIcon {
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor; // Gamechanger
+  cursor: pointer;
+  margin: 1rem;
+  animation: spherepulse 8s ease-in-out infinite;
 
   transition: transform 0.2s ease;
 
@@ -66,15 +85,49 @@
     opacity: 1;
   }
 
-  // 90% {
-  //   transform: scale(1);
-  //   opacity: 1;
+  90% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  95% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  // 50% {
+  //   transform: scale(1.2);
+  //   opacity: 0.7;
   // }
 
-  50% {
-    transform: scale(1.2);
-    opacity: 0.7;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
+}
+
+@keyframes spherepulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  // 50% {
+  //   transform: scale(1.2);
+  //   opacity: 0.7;
+  // }
 
   100% {
     transform: scale(1);

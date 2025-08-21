@@ -207,6 +207,40 @@ export function TypeScriptIcon() {
   );
 }
 
+export function JestIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-jest-plain"></use>
+    </svg>
+  );
+}
+
+export function MaterialIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-materialui-original"></use>
+    </svg>
+  );
+}
+
+export function GitActionsIcon() {
+  return (
+    <svg className={`${styles.icon} `}>
+      <use href="/icons/sprite.svg#icon-githubactions-original"></use>
+    </svg>
+  );
+}
+
+export function SphereIcon({ href }) {
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={href}>
+      <svg className={`${styles.sphereIcon} `}>
+        <use href="/icons/sprite.svg#icon-sphere"></use>
+      </svg>
+    </a>
+  );
+}
+
 export const iconMap = {
   React: ReactIcon,
   Next: NextIcon,
@@ -228,6 +262,10 @@ export const iconMap = {
   ReactQuery: ReactQueryIcon,
   GraphQL: GraphQLIcon,
   TypeScript: TypeScriptIcon,
+  Jest: JestIcon,
+  Material: MaterialIcon,
+  GitActions: GitActionsIcon,
+  Sphere: SphereIcon,
 };
 
 export function Icon({ name, href }) {

@@ -23,17 +23,16 @@ export default function SlidingBox() {
               <Icon name="TypeScript" />
               <Icon name="react" />
               <Icon name="next-dot-js" />
-              <Icon name="react-query" />
               <Icon name="tailwindcss" />
               <Icon name="sass" />
+              <Icon name="materialui-original" />
+              <Icon name="react-query" />
               <Icon name="GraphQL" />
-              <Icon name="node-dot-js" />
-              <Icon name="Nestjs" />
+              <Icon name="jest-plain" />
             </div>
             <h2 className="sm-h1 py-4 color-green">
               {data.slidingBox.subTitle}
             </h2>
-
             <Icons className={styles.icons} />
           </div>
         </section>

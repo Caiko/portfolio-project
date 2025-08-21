@@ -2,12 +2,13 @@
 import React from "react";
 import styles from "./ProjectCard.module.scss";
 import Image from "next/image";
-import { GitHubIcon } from "@/components/Icons/Icons";
+import { GitHubIcon, SphereIcon } from "@/components/Icons/Icons";
 import { useState } from "react";
 
 export default function ProjectCard({
   image,
   title,
+  gitHref,
   href,
   description,
   stack = [],
@@ -45,8 +46,17 @@ export default function ProjectCard({
               <h3 className="sm-h2 color-green">{title}</h3>
               <p className="sm-p py-2 color-green">{description}</p>
             </div>
-            <div className={styles["container__card-back__content__icon"]}>
-              <GitHubIcon href={href} />
+            <div className="flex flex-row justify-end">
+              {gitHref && (
+                <div className={styles["container__card-back__content__icon"]}>
+                  <GitHubIcon href={gitHref} />
+                </div>
+              )}
+              {href && (
+                <div className={styles["container__card-back__content__icon"]}>
+                  <SphereIcon href={href} />
+                </div>
+              )}
             </div>
           </div>
         </div>

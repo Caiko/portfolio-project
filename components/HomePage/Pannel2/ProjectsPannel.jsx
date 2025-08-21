@@ -15,6 +15,7 @@ export default function ProjectsPannel() {
       <div className={styles["container__projects"]}>
         <ProjectCard
           title={projectsData.rnm.title}
+          gitHref={projectsData.rnm.gitHref}
           href={projectsData.rnm.href}
           description={projectsData.rnm.description}
           image={"/projectCards/rnmBanner.webp"}
@@ -26,10 +27,27 @@ export default function ProjectsPannel() {
           ]}
         />
         <ProjectCard
+          title={projectsData.holidayPlacepicker.title}
+          description={projectsData.holidayPlacepicker.description}
+          image={"/projectCards/holidayPlacePickerBanner.webp"}
+          stack={[iconMap["React"], iconMap["TypeScript"]]}
+          gitHref={projectsData.holidayPlacepicker.gitHref}
+          href={projectsData.holidayPlacepicker.href}
+        />
+        <ProjectCard
+          title={projectsData.reactMUI.title}
+          description={projectsData.reactMUI.description}
+          image={"/projectCards/reactMUIBanner.webp"}
+          stack={[iconMap["React"], iconMap["Material"]]}
+          gitHref={projectsData.reactMUI.gitHref}
+          href={projectsData.reactMUI.href}
+        />
+        <ProjectCard
           title={projectsData.project1.title}
           description={projectsData.project1.description}
           image={"/projectCards/foodiesBanner.webp"}
           stack={[iconMap["Next"], iconMap["Tailwind"], iconMap["SQLite"]]}
+          gitHref={projectsData.project1.gitHref}
           href={projectsData.project1.href}
         />
         <ProjectCard
@@ -37,6 +55,7 @@ export default function ProjectsPannel() {
           description={projectsData.project2.description}
           image={"/projectCards/dndBanner.webp"}
           stack={[iconMap["C"], iconMap["Net"], iconMap["SQLite"]]}
+          gitHref={projectsData.project2.gitHref}
           href={projectsData.project2.href}
         />
 
@@ -45,6 +64,7 @@ export default function ProjectsPannel() {
           description={projectsData.project3.description}
           image={"/projectCards/nexterBanner.webp"}
           stack={[iconMap["Sass"]]}
+          gitHref={projectsData.project3.gitHref}
           href={projectsData.project3.href}
         />
         <ProjectCard
@@ -52,6 +72,7 @@ export default function ProjectsPannel() {
           description={projectsData.project4.description}
           image={"/projectCards/pokemonBanner.webp"}
           stack={[iconMap["React"], iconMap["CSS"]]}
+          gitHref={projectsData.project4.gitHref}
           href={projectsData.project4.href}
         />
 
@@ -60,6 +81,7 @@ export default function ProjectsPannel() {
           description={projectsData.project5.description}
           image={"/projectCards/webshopBanner.webp"}
           stack={[iconMap["React"], iconMap["CSS"]]}
+          gitHref={projectsData.project5.gitHref}
           href={projectsData.project5.href}
         />
         <ProjectCard
@@ -67,6 +89,7 @@ export default function ProjectsPannel() {
           description={projectsData.project7.description}
           image={"/projectCards/timerBanner.webp"}
           stack={[iconMap["React"], iconMap["CSS"]]}
+          gitHref={projectsData.project7.gitHref}
           href={projectsData.project7.href}
         />
         <ProjectCard
@@ -74,6 +97,7 @@ export default function ProjectsPannel() {
           description={projectsData.project6.description}
           image={"/projectCards/pmBanner.webp"}
           stack={[iconMap["React"], iconMap["Tailwind"]]}
+          gitHref={projectsData.project6.gitHref}
           href={projectsData.project6.href}
         />
         <ProjectCard
@@ -81,6 +105,7 @@ export default function ProjectsPannel() {
           description={projectsData.project8.description}
           image={"/projectCards/trilloBanner.webp"}
           stack={[iconMap["Sass"]]}
+          gitHref={projectsData.project8.gitHref}
           href={projectsData.project8.href}
         />
         <ProjectCard
@@ -88,6 +113,7 @@ export default function ProjectsPannel() {
           description={projectsData.project9.description}
           image={"/projectCards/tictactoeBanner.webp"}
           stack={[iconMap["React"], iconMap["CSS"]]}
+          gitHref={projectsData.project9.gitHref}
           href={projectsData.project9.href}
         />
       </div>
