@@ -23,7 +23,6 @@ export default function EventLine() {
           <Icon name="react-query" />
           <Icon name="GraphQL" />
           <Icon name="jest-plain" />
-          <Icon name="githubactions-original" />
         </div>
         <h2 className="sm-h1 py-4 color-green">{data.slidingBox.subTitle}</h2>
         <Icons className={styles.icons} />
