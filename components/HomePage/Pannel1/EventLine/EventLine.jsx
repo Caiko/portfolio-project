@@ -31,6 +31,12 @@ export default function EventLine() {
       <div className={styles["container__events"]}>
         <Event
           imageSrc={"/eventLogos/bestseller.webp"}
+          heading={timeLine.event6.heading}
+          description={timeLine.event6.description}
+          period={timeLine.event6.period}
+        />
+        <Event
+          imageSrc={"/eventLogos/bestseller.webp"}
           heading={timeLine.event5.heading}
           description={timeLine.event5.description}
           period={timeLine.event5.period}

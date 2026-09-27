@@ -30,7 +30,13 @@
 
   "event5": {
     "heading": "Student Frontend Developer, BESTSELLER",
-    "description": "During this position, I have the opportunity to become better in React, TypeScript, Material-UI and other technologies. I am a part of a wonderful team where I interact not only with developers but also with designers, product owners, analysts and others in an agile environment.",
+    "description": "During this time, I have the opportunity to work with React, TypeScript, Material-UI and other technologies. I was a part of an agile team where I interact not only with developers but also with designers, product owners, analysts and others in an agile environment.",
     "period": " August 2025 - January 2026"
+  },
+
+  "event6": {
+    "heading": "Frontend Developer, BESTSELLER",
+    "description": "I develop and maintain frontend applications using React, TypeScript, and MUI. I write and maintain automated tests with Vitest to ensure code quality and reliability. I also contribute to and help maintain a shared component library used across the frontend community. Additionally, I use AI to automate and streamline frontend development workflows, helping improve developer efficiency and productivity.",
+    "period": " February 2026 - Present"
   }
 }
